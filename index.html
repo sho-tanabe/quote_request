@@ -21,9 +21,8 @@
 </head>
 
 <body>
-    <form name="googleform1" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSdG1u1XE0AX_JIgAs2s3KavwMyEc8lzna9sN9YB4CXuCFFP8g/formResponse" method="POST"  enctype="application/x-www-form-urlencoded" id="mG61Hd" target="hidden_iframe" onsubmit="submitted=true;">
-    <!--<<form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSeI-O2e35yoAbQCAjjHrwjIJAcFAyeB387Nge-7hNUQu8j_qQ/formResponse" target="hidden_iframe" onsubmit="submitted=true;" method="POST" id="mG61Hd"> 
-    <form class="w-75 mx-auto"　novalidate>-->
+    <form name="googleform1" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSdiEkQbMJv60pNkicOLpU6QNorjG0VO1mY6yFnZ8sgdWJ7P7A/formResponse" method="POST"  enctype="application/x-www-form-urlencoded" id="mG61Hd" target="hidden_iframe" onsubmit="submitted=true;">
+        
         <div class="alert alert-warning" role="alert">
             <font size="-1">
                     【STEP1】<br>
@@ -40,21 +39,117 @@
         <div class="h-adr" style="background-color: #eee;">    
             <p class="w-100 mx-3"><font size="+2">現在お住まいの地域</font></p>
             <div class="w-75 mx-auto">
-            
-
-            
-                <span class="form-control p-country-name mx-3 w-25 mt-3" style="display:none;">Japan</span>
-            
+                <span class="form-control p-country-name mx-3 w-25 mt-3" style="display:none;">Japan</span>            
+                
+                <!--test-->
+                <div class="form-floating">
+                    <input class="form-control p-postal-code w-100 mx-auto" id="postnumber" name="entry.1592950719" type="number" maxlength="7" placeholder="0000000">
+                    <label for="postnumber">
+                        <font size="-1" color="gray">郵便番号</font>
+                        <font size="-2" color="violet">ハイフンなしの数字７桁</font>
+                    </label>
+                    <div class="valid-feedback">Good!</div>
+                    <div class="invalid-feedback">Required.</div>
+                </div>
+                <!--test-->
+                
+                <!--test一時コメントアウト中--
                 <p class="w-100 mx-3">郵便番号<font size="-2" color="violet"> *入力すると住所が自動入力されます。</font></p>
-            
                 <input type="text" class="form-control p-postal-code w-75 mx-auto" size="8" maxlength="7"　placeholder="0000000">
-            
+                <!--test-->
+
                 <br>
             
+                <!--test-->
+                <div class="form-floating">
+                    <select id="address1" name="entry.1674993749" class="form-select p-region-id w-100 mx-auto" required>
+                       
+                        <option selected></option>                
+                    <option value="1">北海道</option>
+                    <option value="2">青森県</option>
+                <option value="3">岩手県</option>
+                <option value="4">宮城県</option>
+                <option value="5">秋田県</option>
+                <option value="6">山形県</option>
+                <option value="7">福島県</option>
+                <option value="8">茨城県</option>
+                <option value="9">栃木県</option>
+                <option value="10">群馬県</option>
+                <option value="11">埼玉県</option>
+                <option value="12">千葉県</option>
+                <option value="13">東京都</option>
+                <option value="14">神奈川県</option>
+                <option value="15">新潟県</option>
+                <option value="16">富山県</option>
+                <option value="17">石川県</option>
+                <option value="18">福井県</option>
+                <option value="19">山梨県</option>
+                <option value="20">長野県</option>
+                <option value="21">岐阜県</option>
+                <option value="22">静岡県</option>
+        
+                    <option value="23">愛知県</option>
+        
+                    <option value="24">三重県</option>
+        
+                    <option value="25">滋賀県</option>
+         
+                    <option value="26">京都府</option>
+         
+                    <option value="27">大阪府</option>
+         
+                    <option value="28">兵庫県</option>
+         
+                    <option value="29">奈良県</option>
+         
+                    <option value="30">和歌山県</option>
+         
+                    <option value="31">鳥取県</option>
+         
+                    
+                    <option value="32">島根県</option>
+         
+                    <option value="33">岡山県</option>
+          
+                    <option value="34">広島県</option>
+           
+                    <option value="35">山口県</option>
+            
+                    <option value="36">徳島県</option>
+            
+                    <option value="37">香川県</option>
+             
+                    <option value="38">愛媛県</option>
+               
+                    <option value="39">高知県</option>
+                
+                    <option value="40">福岡県</option>
+                
+                    <option value="41">佐賀県</option>
+                
+                    <option value="42">長崎県</option>
+                    <option value="43">熊本県</option>
+                    <option value="44">大分県</option>
+                    <option value="45">宮崎県</option>
+                    <option value="46">鹿児島県</option>
+                    <option value="47">沖縄県</option>
+                </select>
+
+                     <label for="address1">
+                            <font size="-1" color="gray">都道府県</font>
+                            <font size="-2" color="violet">手動選択も可能</font>
+                        </label>
+
+                        <div class="valid-feedback">Good!</div>
+                    <div class="invalid-feedback">Required.</div>
+                </div>
+                <!--test-->
+                
+                
+                <!--test一時コメントアウト中--
                 <p class="w-100 mx-3">都道府県<font size="-2" color="violet"> *手動での選択も可能です。</font></p>
             
-                <!--<select id="address1" name="address1" class="form-control p-region-id w-75 mx-auto">-->
-                <select id="address1" name="entry.796315175" class="form-control p-region-id w-75 mx-auto">
+                <select id="address1" name="address1" class="form-control p-region-id w-75 mx-auto">
                 
                     <div class="invalid-feedback">必須入力です。</div>
                 
@@ -129,6 +224,7 @@
                     <option value="46">鹿児島県</option>
                     <option value="47">沖縄県</option>
                 </select>
+<!--test一時コメントアウト中-->
                 <br>
 
                 <!--p-region-idではなくp-regionを取得するためのテスト。画面上は非表示とする予定。開始
@@ -137,11 +233,43 @@
                 <br>
                 <!--p-region-idではなくp-regionを取得するためのテスト。画面上は非表示とする予定。終了-->
 
+                
+
+                <!--test一時コメントアウト中--
                 <p class="w-100 mx-3">市区町村<font size="-2" color="violet"> *手動での入力も可能です。</font></p>
                 <input type="text" id="address2" name="address2" class="form-control p-locality w-75 mx-auto"/>
                 <br>
                 <p class="w-100 mx-3">町・番地<font size="-2" color="violet"> *手動での入力も可能です。</font></p>
                 <input type="text" id="address3" name="address3" class="form-control p-street-address p-extended-address  w-75 mx-auto"/>
+                <!--test一時コメントアウト中-->                
+
+                <!--test-->
+                <div class="form-floating">
+                    <input class="form-control p-locality w-100 mx-auto" id="address2" name="entry.1656297817" type="text" placeholder="xxx" required>
+                    <label for="address2">
+                        <font size="-1" color="gray">市区町村</font>
+                        <font size="-2" color="violet">手動での入力可能</font>
+                    </label>
+                    <div class="valid-feedback">Good!</div>
+                    <div class="invalid-feedback">Required.</div>
+                </div>
+                <!--test-->
+                <br>
+                <!--test-->
+                <div class="form-floating">
+                    <input class="form-control p-street-address p-extended-address  w-100 mx-auto" id="address3" name="entry.33302498" type="text" placeholder="xxx">
+                    <label for="address3">
+                        <font size="-1" color="gray">町・番地</font>
+                        <font size="-2" color="violet">手動での入力可能</font>
+                    </label>
+                    <div class="valid-feedback">Good!</div>
+                    <div class="invalid-feedback">Required.</div>
+                </div>
+                <!--test-->
+                
+                
+                
+                
                 <br>                
             </div>
         </div>
@@ -156,10 +284,6 @@
             <p class="w-100 mx-3"><font size="+2">現在のガス料金情報</font></p>
             <div class="w-75 mx-auto">
 
-                
-                <!--<p class="w-100 mx-3">名前</p>
-                <input class="form-control w-75 mx-auto" id="nametest" name="entry.2144812415" type="number" maxlength="10" placeholder="00000">
-                <br>-->
 
 
                 <!--選択項目次第で入力項目を動的にするテスト開始1-->
@@ -173,7 +297,7 @@
                 <div id="ex_box_div_b" style="display:none;">
                     <p class="w-100 mx-3">タイトル出しテスト1</p>                    
                     <div class="form-floating">
-                        <input class="form-control form-control-lg mx-auto" id="ex_box_b" name="entry.2144812415" type="text"  placeholder="aaaaa" />
+                        <input class="form-control form-control-lg mx-auto" id="ex_box_b" name="ex_box_b" type="text"  placeholder="aaaaa" />
                         <label for="ex_box_b">
                             <font size="-1" color="gray">直連絡：Googleform接続項目だよ</font>
                             <font size="-2" color="gray">こちらに入力して下さい</font>
@@ -268,10 +392,30 @@
             
             <!--test-->
             <div class="form-floating">
-                <input class="form-control form-control-lg" id="billingamount" name="billingamount" type="number" maxlength="10" placeholder="00000円">
+                <input class="form-control form-control-lg" id="billingamount" name="entry.642272830" type="number" maxlength="10" placeholder="00000円">
                 <label for="billingamount">
                     <font size="-1" color="gray">ご請求予定金額</font>
                     <font size="-2" color="gray">(円)を入力</font>
+                </label>
+                <div class="valid-feedback">Good!</div>
+                <div class="invalid-feedback">Required.</div>
+            </div>
+            
+            <div class="form-floating">
+                <input class="form-control form-control-lg" id="basiccharge" name="entry.299805872" type="number" maxlength="10" placeholder="00000円">
+                <label for="basiccharge">
+                    <font size="-1" color="gray">基本料金</font>
+                    <font size="-2" color="gray">(円)を入力</font>
+                </label>
+                <div class="valid-feedback">Good!</div>
+                <div class="invalid-feedback">Required.</div>
+            </div>
+            
+            <div class="form-floating">
+                <input class="form-control form-control-lg" id="quantity" name="entry.1113780615" type="number" maxlength="10" placeholder="00000円">
+                <label for="quantity">
+                    <font size="-1" color="gray">今回ご使用量</font>
+                    <font size="-2" color="gray">(㎥)を入力</font>
                 </label>
                 <div class="valid-feedback">Good!</div>
                 <div class="invalid-feedback">Required.</div>
@@ -280,16 +424,23 @@
 
             
             <br>
+
+                
+<!--test中のため一時停止
             <p class="w-100 mx-3">基本料金(円)</p>
             <input class="form-control w-75 mx-auto" id="basiccharge" name="basiccharge" type="number" maxlength="10" placeholder="00000">
             <br>
             <p class="w-100 mx-3">今回ご使用量(㎥)</p>
             <input class="form-control w-75 mx-auto" id="quantity" name="quantity" type="number" maxlength="10" placeholder="00000">
             <div class="invalid-feedback">必須入力です。</div>
-            <br>
+<!--test中のため一時停止-->  
+
+                <br>
             <p class="w-100 mx-3">ガス料金単価(円)</p>
-            <p class="w-75 mx-auto" id="unitprice" name="unitprice" value="0"></p>
-            <br>
+            <p class="w-75 mx-auto" id="unitprice" name="entry.1056785657" type="number" value="0"></p>
+          
+
+                <br>
 
             </div>
         </div>
