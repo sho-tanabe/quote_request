@@ -312,9 +312,20 @@
                 <div class="valid-feedback">Good!</div>
                 <div class="invalid-feedback">Required.</div>
             </div>
-            <br>
+            <br>                
                 <p class="w-100 mx-3">ガス料金単価(円)</p>
-                <p class="w-75 mx-auto" id="unitprice" name="entry.1056785657" type="number" value="0"></p>       
+                <p class="w-75 mx-auto" id="unitprice" name="entry.1056785657" type="number" value="0"></p>
+                <br>
+            <div class="form-floating">
+                <input class="form-control form-control-lg" id="gas_company" name="gas_company" type="text" placeholder="xxxxx" required>
+                <label for="gas_company">
+                    <font size="-1" color="gray">現在のガス会社</font>
+                    <font size="-2" color="gray">不明の場合は「不明」とご記載ください。</font>
+                </label>
+                <div class="valid-feedback">Good!</div>
+                <div class="invalid-feedback">Required.</div>
+            </div>
+            
         </div>
         <input type="submit" class="mt-4 btn btn-primary btn-block" value="料金診断結果を見る">
     </form>
