@@ -37,7 +37,7 @@
                     </font>
                 </div>
 <!---------------------------------------------------------------------------------------------------------------->        
-                <div class="form-floating w-75 mx-auto">                           
+                <div class="form-floating mx-auto">                           
                     <select id="ex_age_b" class="form-select mx-auto" required>                               
                         <option selected></option>                                    
                         <option value="answer1">【プランA】ガス会社からの直接の連絡を希望する。</option>                                    
@@ -126,57 +126,51 @@
                         <div class="valid-feedback">Good!</div>
                         <div class="invalid-feedback">Required.</div>
                     </div> 
-                </div>            
+                </div>                 
+<!---------------------------------------------------------------------------------------------------------------->                         
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+                <script>
+                    document.getElementById("ex_age_b").addEventListener("change", function(){
+                        var age_elem = document.getElementById("ex_age_b");
+                        var s_value = age_elem.options[age_elem.selectedIndex].value;                    
+                        if(s_value == "answer1"){
+                            $("#ex_box_div_b").show("normal");
+                            $("#ex_box_div_x").hide("normal");
+                            $("#ex_box_div_y").show("normal");
+                        }else if(s_value == "answer2"){
+                            $("#ex_box_div_b").hide("normal");
+                            $("#ex_box_div_x").show("normal");
+                            $("#ex_box_div_y").hide("normal");
+                        }else{
+                            $("#ex_box_div_b").hide("normal");
+                            $("#ex_box_div_x").hide("normal");
+                            $("#ex_box_div_y").hide("normal");
+                        }
+                    }, false);
+                </script>
 <!---------------------------------------------------------------------------------------------------------------->
-            </div>
-<!---------------------------------------------------------------------------------------------------------------->        
-        </div>          
-<!---------------------------------------------------------------------------------------------------------------->                    
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-        <script>
-            document.getElementById("ex_age_b").addEventListener("change", function(){
-                var age_elem = document.getElementById("ex_age_b");
-                var s_value = age_elem.options[age_elem.selectedIndex].value;                    
-                if(s_value == "answer1"){
-                    $("#ex_box_div_b").show("normal");
-                    $("#ex_box_div_x").hide("normal");
-                    $("#ex_box_div_y").show("normal");
-                }else if(s_value == "answer2"){
-                    $("#ex_box_div_b").hide("normal");
-                    $("#ex_box_div_x").show("normal");
-                    $("#ex_box_div_y").hide("normal");
-                }else{
-                    $("#ex_box_div_b").hide("normal");
-                    $("#ex_box_div_x").hide("normal");
-                    $("#ex_box_div_y").hide("normal");
-                }
-            }, false);
-        </script>
-<!---------------------------------------------------------------------------------------------------------------->
-        <div class="w-75 mx-auto">
-<!---------------------------------------------------------------------------------------------------------------->       
-            <div class="alert alert-warning" role="alert">
-                <font size="-1">
-                    【STEP1】<br>
-                    お手元にガスの料金表(検針票)をご用意ください。
-                </font>
-            </div>
+                <div class="alert alert-warning" role="alert">                
+                    <font size="-1">                    
+                        【STEP1】<br>
+                        お手元にガスの料金表(検針票)をご用意ください。                
+                    </font>            
+                </div>
 <!---------------------------------------------------------------------------------------------------------------->            
-            <div class="alert alert-warning" role="alert">
-                <font size="-1">
-                    【STEP2】<br>
-                    現在お住まいの地域について、下記の各項目を入力してください。<br>
-                    郵便番号を入力すると住所が自動入力されます。
-                </font>
-            </div>
+                <div class="alert alert-warning" role="alert">
+                    <font size="-1">
+                        【STEP2】<br>
+                        現在お住まいの地域について、下記の各項目を入力してください。<br>
+                        郵便番号を入力すると住所が自動入力されます。
+                    </font>
+                </div>
 <!---------------------------------------------------------------------------------------------------------------->            
-            <p class="w-100 mx-3">
-                <font size="+2">現在お住まいの地域</font>
-                <br>
-                <font size="-2" color="violet"> *郵便番号を入力すると住所が自動入力されます。</font>
-            </p>
+                <p class="w-100 mx-3">                
+                    <font size="+2">現在お住まいの地域</font>
+                    <br>
+                    <font size="-2" color="violet"> *郵便番号を入力すると住所が自動入力されます。</font>
+                </p>
 <!---------------------------------------------------------------------------------------------------------------->
-            <span class="form-control p-country-name mx-3 w-25 mt-3" style="display:none;">Japan</span>                
+                <span class="form-control p-country-name mx-3 w-25 mt-3" style="display:none;">Japan</span>                
 <!---------------------------------------------------------------------------------------------------------------->
                 <div class="form-floating">
                     <input class="form-control p-postal-code w-100 mx-auto" id="postnumber" name="entry.1592950719" type="number" maxlength="7" placeholder="0000000">
@@ -272,11 +266,7 @@
                     <div class="valid-feedback">Good!</div>
                     <div class="invalid-feedback">Required.</div>
                 </div>
-<!---------------------------------------------------------------------------------------------------------------->                
-            </div>
-<!---------------------------------------------------------------------------------------------------------------->            
-        </div>
-<!---------------------------------------------------------------------------------------------------------------->        
+<!---------------------------------------------------------------------------------------------------------------->                       
         <br>
 <!---------------------------------------------------------------------------------------------------------------->
         <div class="alert alert-warning" role="alert">
@@ -286,10 +276,7 @@
             </font>
         </div>
 <!---------------------------------------------------------------------------------------------------------------->        
-        <div class="calculation" style="background-color: #eee;">
             <p class="w-100 mx-3"><font size="+2">現在ご利用のガスに関する情報</font></p>
-<!---------------------------------------------------------------------------------------------------------------->            
-            <div class="w-75 mx-auto">
 <!---------------------------------------------------------------------------------------------------------------->                
                 <div class="form-floating">                
                     <input class="form-control form-control-lg" id="gas_company" name="gas_company" type="text" placeholder="xxxxx" required>
