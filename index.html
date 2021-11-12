@@ -64,9 +64,34 @@
                 <div class="alert alert-warning" role="alert">                                
                     <font size="-1">                                                   
                         【STEP2】<br>                                              
-                        以下項目をご入力ください。                                          
+                        ご希望の連絡方法を選択してください。                                          
                     </font>                         
                 </div>
+<!---------------------------------------------------------------------------------------------------------------->        
+                <div id="contact_grp1" style="display:none;">                   
+                    <div class="form-floating mx-auto">                           
+                        <select id="contact_a" class="form-select mx-auto" required>                               
+                            <option selected></option>                                    
+                            <option value="answer_m">メール</option>                                    
+                            <option value="answer_t">電話</option>
+                        </select>                
+                        <label for="contact_a">                    
+                            <font size="-1" color="gray">希望の連絡方法を選択して下さい。</font>                
+                        </label>
+                    </div>
+<!---------------------------------------------------------------------------------------------------------------->        
+                <div id="contact_grp2" style="display:none;">                   
+                    <div class="form-floating mx-auto">                           
+                        <select id="contact_b" class="form-select mx-auto" required>                               
+                            <option selected></option>                                    
+                            <option value="answer_l">LINE</option>                                    
+                            <option value="answer_m">メール</option>
+                            <option value="answer_t">電話</option>
+                        </select>                
+                        <label for="contact_b">                    
+                            <font size="-1" color="gray">希望の連絡方法を選択して下さい。</font>                
+                        </label>
+                    </div>
 <!---------------------------------------------------------------------------------------------------------------->                        
                 <div id="ex_box_div_b" style="display:none;">                    
                     <p class="w-100 mx-3">タイトル出しテスト1</p>                    
@@ -142,18 +167,25 @@
 <!---------------------------------------------------------------------------------------------------------------->                         
                 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
                 <script>
+                    
                     document.getElementById("ex_age_b").addEventListener("change", function(){
                         var age_elem = document.getElementById("ex_age_b");
                         var s_value = age_elem.options[age_elem.selectedIndex].value;                    
                         if(s_value == "answer1"){
+                            $("#contact_a").show("normal");
+                            $("#contact_b").hide("normal");
                             $("#ex_box_div_b").show("normal");
                             $("#ex_box_div_x").hide("normal");
                             $("#ex_box_div_y").show("normal");
                         }else if(s_value == "answer2"){
+                            $("#contact_a").hide("normal");
+                            $("#contact_b").show("normal");
                             $("#ex_box_div_b").hide("normal");
                             $("#ex_box_div_x").show("normal");
                             $("#ex_box_div_y").hide("normal");
                         }else{
+                            $("#contact_a").hide("normal");
+                            $("#contact_b").hide("normal");
                             $("#ex_box_div_b").hide("normal");
                             $("#ex_box_div_x").hide("normal");
                             $("#ex_box_div_y").hide("normal");
