@@ -95,24 +95,22 @@
                     </div>
                 </div>
 <!---------------------------------------------------------------------------------------------------------------->                        
-                <div id="ex_box_div_b" style="display:none;">                    
-                    <p class="w-100 mx-3">タイトル出しテスト1</p>                    
+                <div id="ex_box_div_b" style="display:none;">                                      
                     <div class="form-floating">
                         <input class="form-control form-control-lg mx-auto" id="ex_box_b" name="ex_box_b" type="text"  placeholder="aaaaa" />
                         <label for="ex_box_b">
-                            <font size="-1" color="gray">直連絡：Googleform接続項目だよ</font>                        
-                            <font size="-2" color="gray">こちらに入力して下さい</font>
+                            <font size="-1" color="gray">メール</font>                        
+                            <font size="-2" color="gray">必須入力</font>
                         </label>
                         <div class="valid-feedback">Good!</div>
                         <div class="invalid-feedback">Required.</div>
                     </div>  
                     <br>
-                    <p class="w-100 mx-3">タイトル出しテスト2</p>
                     <div class="form-floating">                    
                         <input class="form-control form-control-lg mx-auto" id="changetest1" type="text"  placeholder="aaaaa" />                    
                         <label for="changetest1">                        
-                            <font size="-1" color="gray">直連絡：項目２だよ</font>                        
-                            <font size="-2" color="gray">こちらに入力して下さい</font>
+                            <font size="-1" color="gray">電話番号</font>                        
+                            <font size="-2" color="gray">任意入力</font>
                         </label>                        
                         <div class="valid-feedback">Good!</div>                    
                         <div class="invalid-feedback">Required.</div>                
@@ -125,8 +123,8 @@
                     <div class="form-floating">                    
                         <input class="form-control form-control-lg mx-auto" id="changetest2" type="text"  placeholder="aaaaa" />
                         <label for="changetest2">                        
-                            <font size="-1" color="gray">順子連絡：項目1だよ</font>
-                            <font size="-2" color="gray">こちらに入力して下さい</font>
+                            <font size="-1" color="gray">電話番号</font>
+                            <font size="-2" color="gray">必須入力</font>
                         </label>
                         <div class="valid-feedback">Good!</div>
                         <div class="invalid-feedback">Required.</div>
@@ -135,8 +133,8 @@
                     <div class="form-floating">
                         <input class="form-control form-control-lg mx-auto" id="changetest3" type="text"  placeholder="aaaaa" />
                         <label for="changetest3">
-                            <font size="-1" color="gray">順子連絡：項目2だよ</font>
-                            <font size="-2" color="gray">こちらに入力して下さい</font>
+                            <font size="-1" color="gray">メールアドレス</font>
+                            <font size="-2" color="gray">任意入力</font>
                         </label>
                         <div class="valid-feedback">Good!</div>
                         <div class="invalid-feedback">Required.</div>
@@ -149,8 +147,8 @@
                     <div class="form-floating">
                         <input class="form-control form-control-lg mx-auto" id="changetest4" type="text"  placeholder="aaaaa" />
                         <label for="changetest4">
-                            <font size="-1" color="gray">共通：項目1だよ</font>
-                            <font size="-2" color="gray">こちらに入力して下さい</font>
+                            <font size="-1" color="gray">電話番号</font>
+                            <font size="-2" color="gray">任意入力</font>
                         </label>
                         <div class="valid-feedback">Good!</div>
                         <div class="invalid-feedback">Required.</div>
@@ -159,8 +157,8 @@
                     <div class="form-floating">
                         <input class="form-control form-control-lg mx-auto" id="changetest5" type="text"  placeholder="aaaaa" />
                         <label for="changetest5">
-                            <font size="-1" color="gray">共通：項目2だよ</font>
-                            <font size="-2" color="gray">こちらに入力して下さい</font>
+                            <font size="-1" color="gray">メールアドレス</font>
+                            <font size="-2" color="gray">任意入力</font>
                         </label>                    
                         <div class="valid-feedback">Good!</div>
                         <div class="invalid-feedback">Required.</div>
@@ -182,6 +180,9 @@
                         }else{
                             $("#contact_grp1").hide("normal");
                             $("#contact_grp2").hide("normal");
+                            $("#ex_box_div_b").hide("normal");
+                            $("#ex_box_div_x").hide("normal");
+                            $("#ex_box_div_y").hide("normal");
                         }
                     }, false);
                     
