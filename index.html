@@ -186,6 +186,8 @@
                     }, false);
                     
                     document.getElementById("contact1").addEventListener("change", function(){
+                        var age_elem = document.getElementById("ex_age_b");
+                        var s_value = age_elem.options[age_elem.selectedIndex].value; 
                         var contact1_type = document.getElementById("contact1");
                         var c1_value = contact1_type.options[contact1_type.selectedIndex].value;                    
                         if(s_value == "answer1" && c1_value == "answer_m"){
@@ -204,6 +206,8 @@
                     }, false);
                     
                     document.getElementById("contact2").addEventListener("change", function(){
+                        var age_elem = document.getElementById("ex_age_b");
+                        var s_value = age_elem.options[age_elem.selectedIndex].value; 
                         var contact2_type = document.getElementById("contact2");
                         var c2_value = contact2_type.options[contact2_type.selectedIndex].value;                    
                         if(s_value == "answer2" && c2_value == "answer_m"){
