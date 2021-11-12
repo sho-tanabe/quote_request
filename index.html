@@ -288,17 +288,17 @@
                 <div class="alert alert-warning" role="alert">
                     <font size="-1">
                         【STEP3】<br>
-                        下記の各項目を入力してください。<br>入力後、現在のガス料金単価が算出されますので、「料金診断結果を見る」ボタンを押し、LINEトーク画面で結果を確認してください。
+                        現在ご利用のプロパンガスについて、下記の項目を入力してください。<br>入力後、現在のガス料金単価が算出されますので、「料金診断結果を見る」ボタンを押し、LINEトーク画面で結果を確認してください。
                     </font>
                 </div>
 <!---------------------------------------------------------------------------------------------------------------->        
-                <p class="w-100 mx-3"><font size="+2">現在ご利用のガスに関する情報</font></p>
+                <p class="w-100 mx-3"><font size="+2">現在ご利用のガスについて</font></p>
 <!---------------------------------------------------------------------------------------------------------------->                
                 <div class="form-floating">                
                     <input class="form-control form-control-lg" id="gas_company" name="gas_company" type="text" placeholder="xxxxx" required>
                     <label for="gas_company">
-                        <font size="-1" color="gray">現在のガス会社</font>                        
-                        <font size="-2" color="gray">不明の場合は「不明」とご記載ください。</font>
+                        <font size="-1" color="gray">現在のプロパンガス提供会社</font>                        
+                        <font size="-2" color="gray">会社名をご入力下さい。</font>
                     </label>
                     <div class="valid-feedback">Good!</div>
                     <div class="invalid-feedback">Required.</div>
@@ -329,7 +329,7 @@
                         <option value="answer4">その他</option>                        
                     </select>                
                     <label for="house">                    
-                        <font size="-1" color="gray">現在の居住状況を選択して下さい。</font>                
+                        <font size="-1" color="gray">現在の居住形態を選択して下さい。</font>                
                     </label>
                 </div>
 <!---------------------------------------------------------------------------------------------------------------->                                
@@ -338,8 +338,8 @@
                 <div class="form-floating">
                     <input class="form-control form-control-lg" id="billingamount" name="entry.642272830" type="number" maxlength="10" placeholder="00000円" required>
                     <label for="billingamount">
-                        <font size="-1" color="gray">ご請求予定金額</font>                    
-                        <font size="-2" color="gray">(円)を入力</font>
+                        <font size="-1" color="gray">ご請求予定金額(円)</font>                    
+                        <font size="-2" color="gray">数字でご入力下さい。</font>
                     </label>
                     <div class="valid-feedback">Good!</div>
                     <div class="invalid-feedback">Required.</div>
@@ -350,8 +350,8 @@
                 <div class="form-floating">
                     <input class="form-control form-control-lg" id="basiccharge" name="entry.299805872" type="number" maxlength="10" placeholder="00000円">
                     <label for="basiccharge">                        
-                        <font size="-1" color="gray">基本料金</font>                        
-                        <font size="-2" color="gray">(円)を入力</font>
+                        <font size="-1" color="gray">基本料金(円)</font>                        
+                        <font size="-2" color="gray">数字でご入力下さい。</font>
                     </label>
                     <div class="valid-feedback">Good!</div>
                     <div class="invalid-feedback">Required.</div>
@@ -362,8 +362,8 @@
                 <div class="form-floating">
                     <input class="form-control form-control-lg" id="quantity" name="entry.1113780615" type="number" maxlength="10" placeholder="00000円" required>
                     <label for="quantity">
-                        <font size="-1" color="gray">今回ご使用量</font>
-                        <font size="-2" color="gray">(㎥)を入力</font>
+                        <font size="-1" color="gray">今回ご使用量(㎥)</font>
+                        <font size="-2" color="gray">数字でご入力下さい。</font>
                     </label>
                     <div class="valid-feedback">Good!</div>
                     <div class="invalid-feedback">Required.</div>
@@ -375,7 +375,15 @@
                 <p class="w-75 mx-auto" id="unitprice" name="entry.1056785657" type="number" value="0"></p>
 <!---------------------------------------------------------------------------------------------------------------->                
                 <br>
-<!---------------------------------------------------------------------------------------------------------------->                
+<!---------------------------------------------------------------------------------------------------------------->
+                <div class="alert alert-warning" role="alert">
+                    <font size="-1">
+                        【STEP5】<br>
+                        入力後、送信ボタンを押して下さい。LINEトーク画面に送信内容が表示されます。
+                    </font>
+                </div>
+<!---------------------------------------------------------------------------------------------------------------->        
+
             </div>
 <!---------------------------------------------------------------------------------------------------------------->                
         </div>
