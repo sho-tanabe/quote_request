@@ -70,7 +70,7 @@
 <!---------------------------------------------------------------------------------------------------------------->        
                 <div id="contact_grp1" style="display:none;">                   
                     <div class="form-floating mx-auto">                           
-                        <select id="contact" class="form-select mx-auto" required>                               
+                        <select id="contact_1" class="form-select mx-auto" required>                               
                             <option selected></option>                                    
                             <option value="answer_m">メール</option>                                    
                             <option value="answer_t">電話</option>
@@ -83,7 +83,7 @@
 <!---------------------------------------------------------------------------------------------------------------->        
                 <div id="contact_grp2" style="display:none;">                   
                     <div class="form-floating mx-auto">                           
-                        <select id="contact" class="form-select mx-auto" required>                               
+                        <select id="contact_2" class="form-select mx-auto" required>                               
                             <option selected></option>                                    
                             <option value="answer_l">LINE</option>                                    
                             <option value="answer_m">メール</option>
@@ -185,14 +185,14 @@
                         }
                     }, false);
                     
-                    document.getElementById("contact").addEventListener("change", function(){
-                        var contact_type = document.getElementById("contact");
-                        var c_value = contact_type.options[contact_type.selectedIndex].value;                    
-                        if(c_value == "answer_m"){
+                    document.getElementById("contact1").addEventListener("change", function(){
+                        var contact1_type = document.getElementById("contact1");
+                        var c1_value = contact1_type.options[contact1_type.selectedIndex].value;                    
+                        if(c1_value == "answer_m"){
                             $("#ex_box_div_b").show("normal");
                             $("#ex_box_div_x").hide("normal");
                             $("#ex_box_div_y").show("normal");
-                        }else if(c_value == "answer_t"){
+                        }else if(c1_value == "answer_t"){
                             $("#ex_box_div_b").hide("normal");
                             $("#ex_box_div_x").show("normal");
                             $("#ex_box_div_y").hide("normal");
