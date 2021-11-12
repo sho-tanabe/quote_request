@@ -60,6 +60,7 @@ $(function () {
 
 
 
+        window.confirm('送信ボタンテスト1');
         
         
         //練習エリア開始
