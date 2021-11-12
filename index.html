@@ -70,7 +70,7 @@
 <!---------------------------------------------------------------------------------------------------------------->        
                 <div id="contact_grp1" style="display:none;">                   
                     <div class="form-floating mx-auto">                           
-                        <select id="contact_a" class="form-select mx-auto" required>                               
+                        <select id="contact" class="form-select mx-auto" required>                               
                             <option selected></option>                                    
                             <option value="answer_m">メール</option>                                    
                             <option value="answer_t">電話</option>
@@ -83,7 +83,7 @@
 <!---------------------------------------------------------------------------------------------------------------->        
                 <div id="contact_grp2" style="display:none;">                   
                     <div class="form-floating mx-auto">                           
-                        <select id="contact_b" class="form-select mx-auto" required>                               
+                        <select id="contact" class="form-select mx-auto" required>                               
                             <option selected></option>                                    
                             <option value="answer_l">LINE</option>                                    
                             <option value="answer_m">メール</option>
@@ -176,23 +176,33 @@
                         if(s_value == "answer1"){
                             $("#contact_grp1").show("normal");
                             $("#contact_grp2").hide("normal");
-                            $("#ex_box_div_b").show("normal");
-                            $("#ex_box_div_x").hide("normal");
-                            $("#ex_box_div_y").show("normal");
                         }else if(s_value == "answer2"){
                             $("#contact_grp1").hide("normal");
                             $("#contact_grp2").show("normal");
+                        }else{
+                            $("#contact_grp1").hide("normal");
+                            $("#contact_grp2").hide("normal");
+                        }
+                    }, false);
+                    
+                    document.getElementById("contact").addEventListener("change", function(){
+                        var contact_type = document.getElementById("contact");
+                        var c_value = contact_type.options[contact_type.selectedIndex].value;                    
+                        if(c_value == "answer_m"){
+                            $("#ex_box_div_b").show("normal");
+                            $("#ex_box_div_x").hide("normal");
+                            $("#ex_box_div_y").show("normal");
+                        }else if(c_value == "answer_t"){
                             $("#ex_box_div_b").hide("normal");
                             $("#ex_box_div_x").show("normal");
                             $("#ex_box_div_y").hide("normal");
                         }else{
-                            $("#contact_grp1").hide("normal");
-                            $("#contact_grp2").hide("normal");
                             $("#ex_box_div_b").hide("normal");
                             $("#ex_box_div_x").hide("normal");
                             $("#ex_box_div_y").hide("normal");
                         }
                     }, false);
+                    
                 </script>
 <!---------------------------------------------------------------------------------------------------------------->
                 <div class="alert alert-warning" role="alert">                
