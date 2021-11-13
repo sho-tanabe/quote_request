@@ -224,14 +224,20 @@
                             $("#ex_box_div_b").show("normal");
                             $("#ex_box_div_x").hide("normal");
                             $("#ex_box_div_y").hide("normal");
+                            document.getElementById("changetest2").removeAttribute("disabled");
+                            document.getElementById("ex_box_e").setAttribute("disabled", true);
                         }else if(s_value == "answer1" && c1_value == "answer_t"){
                             $("#ex_box_div_b").hide("normal");
                             $("#ex_box_div_x").show("normal");
                             $("#ex_box_div_y").hide("normal");
+                            document.getElementById("ex_box_e").removeAttribute("disabled");
+                            document.getElementById("changetest2").setAttribute("disabled", true);
                         }else{
                             $("#ex_box_div_b").hide("normal");
                             $("#ex_box_div_x").hide("normal");
                             $("#ex_box_div_y").show("normal");
+                            document.getElementById("changetest2").removeAttribute("disabled");
+                            document.getElementById("ex_box_e").removeAttribute("disabled");
                         }
                     }, false);
                     
