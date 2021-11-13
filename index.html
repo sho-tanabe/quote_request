@@ -192,12 +192,6 @@
                     document.getElementById("ex_age_b").addEventListener("change", function(){
                         document.getElementById("contact1").selectedIndex = 0;
                         document.getElementById("contact2").selectedIndex = 0;
-                        document.getElementById("ex_box_b").val='';
-                        document.getElementById("changetest1").val='';
-                        document.getElementById("changetest2").val='';
-                        document.getElementById("changetest3").val='';
-                        document.getElementById("changetest4").val='';
-                        document.getElementById("changetest5").val='';
                         var age_elem = document.getElementById("ex_age_b");
                         var s_value = age_elem.options[age_elem.selectedIndex].value;                    
                         if(s_value == "answer1"){
@@ -222,6 +216,12 @@
                     }, false);
                     
                     document.getElementById("contact1").addEventListener("change", function(){
+                        document.getElementById("ex_box_b").val='';
+                        document.getElementById("changetest1").val='';
+                        document.getElementById("changetest2").val='';
+                        document.getElementById("changetest3").val='';
+                        document.getElementById("changetest4").val='';
+                        document.getElementById("changetest5").val='';
                         var age_elem = document.getElementById("ex_age_b");
                         var s_value = age_elem.options[age_elem.selectedIndex].value; 
                         var contact1_type = document.getElementById("contact1");
@@ -257,6 +257,12 @@
                     }, false);
                     
                     document.getElementById("contact2").addEventListener("change", function(){
+                        document.getElementById("ex_box_b").val='';
+                        document.getElementById("changetest1").val='';
+                        document.getElementById("changetest2").val='';
+                        document.getElementById("changetest3").val='';
+                        document.getElementById("changetest4").val='';
+                        document.getElementById("changetest5").val='';
                         var age_elem = document.getElementById("ex_age_b");
                         var s_value = age_elem.options[age_elem.selectedIndex].value; 
                         var contact2_type = document.getElementById("contact2");
