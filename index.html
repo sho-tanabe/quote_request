@@ -97,7 +97,7 @@
 <!---------------------------------------------------------------------------------------------------------------->        
                 <div id="contact_grp2" style="display:none;">                   
                     <div class="form-floating mx-auto">                           
-                        <select id="contact2" name"entry.499682447" class="form-select mx-auto" >                               
+                        <select id="contact2" name"entry.499682447" class="form-select mx-auto">                               
                             <option selected></option>                                    
                             <option value="answer_l">LINE</option>                                    
                             <option value="answer_m">メール</option>
@@ -200,18 +200,24 @@
                             $("#ex_box_div_b").hide("normal");
                             $("#ex_box_div_x").hide("normal");
                             $("#ex_box_div_y").hide("normal");
+                            document.getElementById("contact1").setAttribute("required", true);
+                            document.getElementById("contact2").removeAttribute("required");
                         }else if(s_value == "answer2"){
                             $("#contact_grp1").hide("normal");
                             $("#contact_grp2").show("normal");
                             $("#ex_box_div_b").hide("normal");
                             $("#ex_box_div_x").hide("normal");
                             $("#ex_box_div_y").hide("normal");
+                            document.getElementById("contact1").removeAttribute("required");
+                            document.getElementById("contact2").setAttribute("required", true);
                         }else{
                             $("#contact_grp1").hide("normal");
                             $("#contact_grp2").hide("normal");
                             $("#ex_box_div_b").hide("normal");
                             $("#ex_box_div_x").hide("normal");
                             $("#ex_box_div_y").hide("normal");
+                            document.getElementById("contact1").removeAttribute("required");
+                            document.getElementById("contact2").removeAttribute("required");
                         }
                     }, false);
                     
