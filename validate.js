@@ -1,4 +1,6 @@
-                    $('document').getElementById("ex_age_b").addEventListener("change", function(){
+$(function () {
+
+  $('document').getElementById("ex_age_b").addEventListener("change", function(){
                         document.getElementById("contact1").selectedIndex = 0;
                         document.getElementById("contact2").selectedIndex = 0;
                         var age_elem = document.getElementById("ex_age_b");
@@ -133,3 +135,4 @@
                             document.getElementById("changetest5").removeAttribute("disabled");
                         }
                     }, false);
+});
