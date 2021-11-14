@@ -193,8 +193,10 @@
                         document.getElementById("contact1").selectedIndex = 0;
                         document.getElementById("contact2").selectedIndex = 0;
                         var age_elem = document.getElementById("ex_age_b");
-                        var s_value = age_elem.options[age_elem.selectedIndex].value;                    
-                        if(s_value == "answer1"){
+                        <!-- var s_value = age_elem.options[age_elem.selectedIndex].value;                    
+                        <!-- if(s_value == "answer1"){
+                        var s_value = age_elem.selectedIndex;                    
+                        if(s_value == 1){
                             $("#contact_grp1").show("normal");
                             $("#contact_grp2").hide("normal");
                             $("#ex_box_div_b").hide("normal");
@@ -202,7 +204,8 @@
                             $("#ex_box_div_y").hide("normal");
                             document.getElementById("contact1").setAttribute("required", true);
                             document.getElementById("contact2").removeAttribute("required");
-                        }else if(s_value == "answer2"){
+                        <!-- }else if(s_value == "answer2"){
+                        }else if(s_value == 2){
                             $("#contact_grp1").hide("normal");
                             $("#contact_grp2").show("normal");
                             $("#ex_box_div_b").hide("normal");
