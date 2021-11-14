@@ -222,6 +222,8 @@
                     }, false);
                     
                     document.getElementById("contact1").addEventListener("change", function(){
+                        document.getElementById("contact1").removeAttribute("disabled");
+                        document.getElementById("contact2").setAttribute("disabled", true);
                         document.getElementById("ex_box_b").value='';
                         document.getElementById("changetest1").value='';
                         document.getElementById("changetest2").value='';
@@ -272,6 +274,8 @@
                     }, false);
                     
                     document.getElementById("contact2").addEventListener("change", function(){
+                        document.getElementById("contact1").setAttribute("disabled", true);
+                        document.getElementById("contact2").removeAttribute("disabled");
                         document.getElementById("ex_box_b").value='';
                         document.getElementById("changetest1").value='';
                         document.getElementById("changetest2").value='';
