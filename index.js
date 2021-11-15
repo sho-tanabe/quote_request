@@ -53,9 +53,9 @@ $(function () {
         var username = $('input[name="entry.123644310"]').val();
         var contact = $('[name="entry.499682447"] option:selected').text();
 //        var tel = $('input[name="entry.1613264123"]').val();
-        var tel1 = $('input[id="entry.1613264123"]').val();
-        var tel2 = $('input[id="entry.1613264123"]').val();
-        var tel3 = $('input[id="entry.1613264123"]').val();
+        var tel1 = $('input[id="changetest1"]').val();
+        var tel2 = $('input[id="changetest2"]').val();
+        var tel3 = $('input[id="changetest4"]').val();
 
         var tel_date = $('input[name="entry.182653158"]').val();
         var email = $('input[name="entry.1196358205"]').val();        
