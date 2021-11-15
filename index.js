@@ -42,6 +42,7 @@ $(function () {
     // 送信
     $('form').submit(function () {
 
+                
 
         //進め方項目
         var process = $('[name="entry.628793706"] option:selected').text();
@@ -51,11 +52,18 @@ $(function () {
         //基本情報項目
         var username = $('input[name="entry.123644310"]').val();
         var contact = $('[name="entry.499682447"] option:selected').text();
-        var tel = $('input[name="entry.1613264123"]').val();
+//        var tel = $('input[name="entry.1613264123"]').val();
+        var tel1 = $('input[id="entry.1613264123"]').val();
+        var tel2 = $('input[id="entry.1613264123"]').val();
+        var tel3 = $('input[id="entry.1613264123"]').val();
+
         var tel_date = $('input[name="entry.182653158"]').val();
         var email = $('input[name="entry.1196358205"]').val();        
         
-        window.confirm(tel);
+        window.confirm(tel1);
+        window.confirm(tel2);
+        window.confirm(tel3);
+
         window.confirm(tel_date);
         
         //電話番号関連項目 
