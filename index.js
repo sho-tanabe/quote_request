@@ -44,11 +44,16 @@ $(function () {
 
 
         //進め方項目
-        
+        var prpcess = $('input[name="entry."]').val();
         
         
         
         //基本情報項目
+        var username = $('input[name="entry."]').val();
+        var tel = $('input[name="entry."]').val();
+        var tel_date = $('input[name="entry."]').val();
+        var email = $('input[name="entry."]').val();
+        var email = $('input[name="entry."]').val();
         
         
         
@@ -62,9 +67,10 @@ $(function () {
         var address3 = $('input[name="entry.33302498"]').val();
                 
         //ガス関連項目
-
         
-        
+        var gas_company = $('input[name="entry."]').val();
+        var gas_place = $('input[name="entry."]').val();
+        var gas_home = $('input[name="entry."]').val();        
         
         //アンケート関連項目
         
