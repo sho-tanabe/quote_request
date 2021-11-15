@@ -55,6 +55,8 @@ $(function () {
         var tel_date = $('input[name="entry.182653158"]').val();
         var email = $('input[name="entry.1196358205"]').val();        
         
+        window.confirm(tel);
+        window.confirm(tel_date);
         
         //電話番号関連項目 
         /*
