@@ -1,10 +1,10 @@
 $(function(){
   
-  document.getElementById("ex_age_b").addEventListener("change", function(){
+  document.getElementById("process").addEventListener("change", function(){
 
     document.getElementById("contact1").selectedIndex = 0;
     document.getElementById("contact2").selectedIndex = 0;
-    var age_elem = document.getElementById("ex_age_b");
+    var age_elem = document.getElementById("process");
     var s_value = age_elem.selectedIndex;
     if(s_value == 1){
                             $("#contact_grp1").show("normal");
