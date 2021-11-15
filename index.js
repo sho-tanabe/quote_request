@@ -56,20 +56,20 @@ $(function () {
         var tel1 = $('input[id="changetest1"]').val();
         var tel2 = $('input[id="changetest2"]').val();
         var tel3 = $('input[id="changetest4"]').val();
-        var tel_date = $('input[name="entry.182653158"]').val();
+//        var tel_date = $('input[name="entry.182653158"]').val();
 
         var email1 = $('input[id="ex_box_b"]').val();        
         var email2 = $('input[id="changetest3"]').val();        
         var email3 = $('input[id="changetest5"]').val();        
                 
         //電話番号関連項目 
-        /*
-        if( tel = "" ){
-            var tel_date = '電話希望時のみ入力';
+        
+        if( tel1 == null && tel2 == null && tel3 == null ){
+            var tel_date = '電話希望時のみ入力必須';
         }else{
             var tel_date = $('input[name="entry.182653158"]').val();
         }
-        */
+        
         
         //住所項目
 
