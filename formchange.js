@@ -69,6 +69,9 @@ $(function(){
                             document.getElementById("ex_box_b").removeAttribute("disabled");
                             document.getElementById("changetest3").setAttribute("disabled", true);
                             document.getElementById("changetest5").setAttribute("disabled", true);                
+      document.getElementById("date").removeAttribute("required");
+      document.getElementById("date").setAttribute("disabled", true);
+
       //直接連絡の場合（電話必須）
     }else if(s_value == 1 && c1_value == 2){
                             $("#ex_box_div_b").hide("normal");
@@ -82,6 +85,8 @@ $(function(){
                             document.getElementById("ex_box_b").setAttribute("disabled", true);
                             document.getElementById("changetest3").removeAttribute("disabled");
                             document.getElementById("changetest5").setAttribute("disabled", true);
+      document.getElementById("date").removeAttribute("disabled");
+      document.getElementById("date").setAttribute("required", true);
     }else{
                             $("#ex_box_div_b").hide("normal");
                             $("#ex_box_div_x").hide("normal");
@@ -94,6 +99,9 @@ $(function(){
                             document.getElementById("ex_box_b").setAttribute("disabled", true);
                             document.getElementById("changetest3").setAttribute("disabled", true);
                             document.getElementById("changetest5").removeAttribute("disabled");
+      document.getElementById("date").removeAttribute("required");
+      document.getElementById("date").setAttribute("disabled", true);
+
     }
   }, false);
 });
@@ -126,6 +134,8 @@ $(function(){
                             document.getElementById("ex_box_b").removeAttribute("disabled");
                             document.getElementById("changetest3").setAttribute("disabled", true);
                             document.getElementById("changetest5").setAttribute("disabled", true);
+      document.getElementById("date").removeAttribute("required");
+      document.getElementById("date").setAttribute("disabled", true);
     //順子の窓口経由の場合（電話必須）
     }else if(s_value == 2 && c2_value == 3){
                             $("#ex_box_div_b").hide("normal");
@@ -139,6 +149,8 @@ $(function(){
                             document.getElementById("ex_box_b").setAttribute("disabled", true);
                             document.getElementById("changetest3").removeAttribute("disabled");
                             document.getElementById("changetest5").setAttribute("disabled", true);
+      document.getElementById("date").removeAttribute("disabled");
+      document.getElementById("date").setAttribute("required", true);
     //順子の窓口経由の場合（LINE利用） 
     }else{
                             $("#ex_box_div_b").hide("normal");
@@ -152,6 +164,8 @@ $(function(){
                             document.getElementById("ex_box_b").setAttribute("disabled", true);
                             document.getElementById("changetest3").setAttribute("disabled", true);
                             document.getElementById("changetest5").removeAttribute("disabled");
+      document.getElementById("date").removeAttribute("required");
+      document.getElementById("date").setAttribute("disabled", true);
     }
   }, false);
   
