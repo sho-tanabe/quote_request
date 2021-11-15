@@ -85,14 +85,11 @@ $(function () {
         
 
         //算出結果
-//      var difference = ( $('#billingamount').val() - $('#basiccharge').val() ) / $('#quantity').val();
-//      var difference = ( $('#entry.642272830').val() - $('#entry.299805872').val() ) / $('#entry.1113780615').val();
         var difference = ( $('#billingamount').val() - $('#basiccharge').val() ) / $('#quantity').val() ;
         var resultround = Math.floor(difference);
         
         //コスト削減予定額
         var costcut = (resultround - 280) * $('#quantity').val();
-//        var costcut = (resultround - 280) * $('#entry.1113780615').val();
 
 
         //コスト削減予定額（LINEトーク送信用）
@@ -105,7 +102,12 @@ $(function () {
                 var costcutfloor = Math.floor(costcut / 1000) * 1000;
                 var costcutmsg = `約${costcutfloor}円程度`;
                 }
-        
+
+        //送信前の確認画面のメッセージ
+        var confirm_msg = `【基本情報】\nお名前:${username}様\n今後の進め方:${process}\n希望の連絡方法:${contact}\n電話番号:${tel}\n(電話の希望日:${tel_date})\nメールアドレス:${email}\n【現在お住まいの地域】\n〒:${postnumber}\n都道府県:${address1}\n市区町村:${address2}\n町・番地:${address3}\n【現在のガスについて】\n利用中のガス提供会社:${gas_company}\n利用用途:${gas_area}\n居住形態:${gas_house}\nご請求予定金額:${billingamount}円\n基本料金:${basiccharge}円\n今回ご使用量:${quantity}㎥\nガス料金単価:${resultround}`;            
+
+
+        //LINEトークに投稿するメッセージ
         if ( 7 >= address1num || address1num >= 15 ){
             var msg = `【基本情報】\nお名前:${username}様\n今後の進め方:${process}\n希望の連絡方法:${contact}\n電話番号:${tel}\n(電話の希望日:${tel_date})\nメールアドレス:${email}\n【現在お住まいの地域】\n〒:${postnumber}\n都道府県:${address1}\n市区町村:${address2}\n町・番地:${address3}\n【現在のガスについて】\n利用中のガス提供会社:${gas_company}\n利用用途:${gas_area}\n居住形態:${gas_house}\nご請求予定金額:${billingamount}円\n基本料金:${basiccharge}円\n今回ご使用量:${quantity}㎥\nガス料金単価:${resultround}\n-----------\n【お安くなる金額目安】\n対象外地域のため判定できません。`;
         } else {
