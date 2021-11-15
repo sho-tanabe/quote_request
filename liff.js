@@ -64,9 +64,9 @@ function sendMessages(text) {
     liff.sendMessages([{
         'type': 'text',
         'text': text
-    },{
-        'type': 'text',
-        'text': "見積もり申し込み"
+//    },{
+//        'type': 'text',
+//        'text': "見積もり申し込み"
     }]).then(function () {
         document.googleform1.submit();
     }).then(function () {
