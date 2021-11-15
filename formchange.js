@@ -52,6 +52,7 @@ $(function(){
     document.getElementById("changetest3").value='';
     document.getElementById("changetest4").value='';
     document.getElementById("changetest5").value='';
+    document.getElementById("date").value='';
     var age_elem = document.getElementById("process");
     var s_value = age_elem.selectedIndex; 
     var contact1_type = document.getElementById("contact1");
@@ -117,6 +118,7 @@ $(function(){
     document.getElementById("changetest3").value='';
     document.getElementById("changetest4").value='';
     document.getElementById("changetest5").value='';
+    document.getElementById("date").value='';
     var age_elem = document.getElementById("process");
     var s_value = age_elem.selectedIndex;
     var contact2_type = document.getElementById("contact2");
