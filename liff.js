@@ -45,17 +45,6 @@ function sendText(text) {
     }
 }
 
-// LINEトーク画面上でメッセージ送信→2通同時テスト成功のため、メッセージ2通目を動的に代入するテストが成功するまで、コメントアウトのままとしている。
-//function sendMessages(text) {
-//    liff.sendMessages([{
-//        'type': 'text',
-//        'text': text
-//    }]).then(function () {
-//        liff.closeWindow();
-//    }).catch(function (error) {
-//        window.alert('Failed to send message ' + error);
-//    });
-//}
 
 
 //2通同時に送れるかテスト→テスト結果：同時送信成功！！コメントアウトのままとしている。
@@ -89,18 +78,6 @@ function closeWin() {
 //thanks.jsで呼び出しているため削除不可
 
 
-//バリデーションテスト
-//function check(){
-//    if (googleform1.username.value == ""){
-        //条件に一致する場合(メールアドレスが空の場合)
-//        alert("お名前を入力してください");    //エラーメッセージを出力
-//        return false;    //送信ボタン本来の動作をキャンセルします
-//    }else{
-        //条件に一致しない場合(メールアドレスが入力されている場合)
-//        return true;    //送信ボタン本来の動作を実行します
-//    }
-//}
-//バリデーションテスト
 
 
 // Webブラウザからメッセージ送信
@@ -115,21 +92,6 @@ function shareTargetPicker(text) {
 
 
 
-//Email送信(Elastic Emailを利用中。永久無料プランでは、1日に最大100通のメールを送信できます。この制限を超えた場合には、使用量に対して支払いを行うことができます。メール1,000通あたり0.09ドルです。)
-//function sendautomail(text){
-function sendautomail(msg){
-    Email.send({
-        SecureToken : "720bc3d8-8906-4b0d-bb67-6ed51d1861f0", //HOSTやユーザーパスワード等の直書きをやめてセキュアトークン発行をしたところ再び成功した。（参照：https://www.smtpjs.com/）
-        To : 'lpg.switching@gmail.com',
-        From : "lpg.switching@gmail.com",
-        Subject : "LINE経由でガス料金単価の計算実行あり。",
-        Body : msg
-//      3回目以降フリーズする理由。この後のthen以降のalert出すのを消したらうまくいくのではないか？？またはtextとmsgが怪しい。だめだ・・・同じ現象が発生・・
-//        Body : text
-    }).then(
-        message => alert(message)
-    )
-};
 
 
 //クリアボタン押下時の動作
