@@ -49,7 +49,7 @@ $(function(){
     document.getElementById("changetest3").value='';
     document.getElementById("changetest4").value='';
     document.getElementById("changetest5").value='';
-    var age_elem = document.getElementById("ex_age_b");
+    var age_elem = document.getElementById("process");
     var s_value = age_elem.selectedIndex; 
     var contact1_type = document.getElementById("contact1");
     var c1_value = contact1_type.selectedIndex;                    
@@ -104,7 +104,7 @@ $(function(){
     document.getElementById("changetest3").value='';
     document.getElementById("changetest4").value='';
     document.getElementById("changetest5").value='';
-    var age_elem = document.getElementById("ex_age_b");
+    var age_elem = document.getElementById("process");
     var s_value = age_elem.selectedIndex;
     var contact2_type = document.getElementById("contact2");
     var c2_value = contact2_type.selectedIndex;                                                
