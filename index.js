@@ -44,18 +44,16 @@ $(function () {
 
 
         //進め方項目
-        var prpcess = $('input[name="entry."]').val();
+        var process = $('[name="entry.628793706"] option:selected').text();
         
         
         
         //基本情報項目
-        var username = $('input[name="entry."]').val();
-        var tel = $('input[name="entry."]').val();
-        var tel_date = $('input[name="entry."]').val();
-        var email = $('input[name="entry."]').val();
-        var email = $('input[name="entry."]').val();
-        
-        
+        var username = $('input[name="entry.123644310"]').val();
+        var contact = $('[name="entry.499682447"] option:selected').text();
+        var tel = $('input[name="entry.1613264123"]').val();
+        var tel_date = $('input[name="entry.182653158"]').val();
+        var email = $('input[name="entry.1196358205"]').val();        
         
         
         //住所項目
@@ -68,9 +66,9 @@ $(function () {
                 
         //ガス関連項目
         
-        var gas_company = $('input[name="entry."]').val();
-        var gas_place = $('input[name="entry."]').val();
-        var gas_home = $('input[name="entry."]').val();        
+        var gas_company = $('input[name="entry.1867640231"]').val();
+        var gas_area = $('[name="entry.736823717"] option:selected').text();
+        var gas_house = $('[name="entry.2013057432"] option:selected').text();        
         
         //アンケート関連項目
         
@@ -109,22 +107,16 @@ $(function () {
                 }
         
         if ( 7 >= address1num || address1num >= 15 ){
-            var msg = `【現在お住まいの地域】\n〒:${postnumber}\n都道府県:${address1}\n市区町村:${address2}\n町・番地:${address3}\n【現在のガス料金情報】\nご請求予定金額(円):${billingamount}\n基本料金(円):${basiccharge}\n今回ご使用量(㎥):${quantity}\nガス料金単価:${resultround}\n-----------\n【お安くなる金額目安】\n対象外地域のため判定できません。`;
+            var msg = `【基本情報】\nお名前:${username}\n今後の進め方:${process}\n希望の連絡方法:${contact}\n電話番号:${tel}\n(電話の希望日:${tel_date})\nメールアドレス:${email}\n【現在お住まいの地域】\n〒:${postnumber}\n都道府県:${address1}\n市区町村:${address2}\n町・番地:${address3}\n【現在のガスについて】\n利用中のガス提供会社:${gas_company}\n利用用途:${gas_area}\n居住形態:${gas_house}\nご請求予定金額(円):${billingamount}\n基本料金(円):${basiccharge}\n今回ご使用量(㎥):${quantity}\nガス料金単価:${resultround}\n-----------\n【お安くなる金額目安】\n対象外地域のため判定できません。`;
         } else {
-            var msg = `【現在お住まいの地域】\n〒:${postnumber}\n都道府県:${address1}\n市区町村:${address2}\n町・番地:${address3}\n【現在のガス料金情報】\nご請求予定金額(円):${billingamount}\n基本料金(円):${basiccharge}\n今回ご使用量(㎥):${quantity}\nガス料金単価:${resultround}\n-----------\n【お安くなる金額目安】\n${costcutmsg}`;
+            var msg = `【基本情報】\nお名前:${username}\n今後の進め方:${process}\n希望の連絡方法:${contact}\n電話番号:${tel}\n(電話の希望日:${tel_date})\nメールアドレス:${email}\n【現在お住まいの地域】\n〒:${postnumber}\n都道府県:${address1}\n市区町村:${address2}\n町・番地:${address3}\n【現在のガスについて】\n利用中のガス提供会社:${gas_company}\n利用用途:${gas_area}\n居住形態:${gas_house}\nご請求予定金額(円):${billingamount}\n基本料金(円):${basiccharge}\n今回ご使用量(㎥):${quantity}\nガス料金単価:${resultround}\n-----------\n【お安くなる金額目安】\n${costcutmsg}`;
         }
 
                 
         if ( 7 >= address1num || address1num >= 15 ){
             var msg2 = `対象外地域`;
-        } else if (difference < 281){
-            var msg2 = `Sランク`; 
-        } else if (difference >= 281 && difference < 300){
-            var msg2 = `Aランク`; 
-        } else if (difference >= 301 && difference < 500){
-            var msg2 = `Bランク`; 
         } else {
-            var msg2 = `Cランク`; 
+            var msg2 = `見積もり申し込み`; 
         } 
 
         
