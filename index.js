@@ -107,9 +107,9 @@ $(function () {
                 }
         
         if ( 7 >= address1num || address1num >= 15 ){
-            var msg = `【基本情報】\nお名前:${username}様\n今後の進め方:${process}\n希望の連絡方法:${contact}\n電話番号:${tel}\n(電話の希望日:${tel_date})\nメールアドレス:${email}\n【現在お住まいの地域】\n〒:${postnumber}\n都道府県:${address1}\n市区町村:${address2}\n町・番地:${address3}\n【現在のガスについて】\n利用中のガス提供会社:${gas_company}\n利用用途:${gas_area}\n居住形態:${gas_house}\nご請求予定金額(円):${billingamount}\n基本料金(円):${basiccharge}\n今回ご使用量(㎥):${quantity}\nガス料金単価:${resultround}\n-----------\n【お安くなる金額目安】\n対象外地域のため判定できません。`;
+            var msg = `【基本情報】\nお名前:${username}様\n今後の進め方:${process}\n希望の連絡方法:${contact}\n電話番号:${tel}\n(電話の希望日:${tel_date})\nメールアドレス:${email}\n【現在お住まいの地域】\n〒:${postnumber}\n都道府県:${address1}\n市区町村:${address2}\n町・番地:${address3}\n【現在のガスについて】\n利用中のガス提供会社:${gas_company}\n利用用途:${gas_area}\n居住形態:${gas_house}\nご請求予定金額:${billingamount}円\n基本料金:${basiccharge}円\n今回ご使用量:${quantity}㎥\nガス料金単価:${resultround}\n-----------\n【お安くなる金額目安】\n対象外地域のため判定できません。`;
         } else {
-            var msg = `【基本情報】\nお名前:${username}様\n今後の進め方:${process}\n希望の連絡方法:${contact}\n電話番号:${tel}\n(電話の希望日:${tel_date})\nメールアドレス:${email}\n【現在お住まいの地域】\n〒:${postnumber}\n都道府県:${address1}\n市区町村:${address2}\n町・番地:${address3}\n【現在のガスについて】\n利用中のガス提供会社:${gas_company}\n利用用途:${gas_area}\n居住形態:${gas_house}\nご請求予定金額(円):${billingamount}\n基本料金(円):${basiccharge}\n今回ご使用量(㎥):${quantity}\nガス料金単価:${resultround}\n-----------\n【お安くなる金額目安】\n${costcutmsg}`;
+            var msg = `【基本情報】\nお名前:${username}様\n今後の進め方:${process}\n希望の連絡方法:${contact}\n電話番号:${tel}\n(電話の希望日:${tel_date})\nメールアドレス:${email}\n【現在お住まいの地域】\n〒:${postnumber}\n都道府県:${address1}\n市区町村:${address2}\n町・番地:${address3}\n【現在のガスについて】\n利用中のガス提供会社:${gas_company}\n利用用途:${gas_area}\n居住形態:${gas_house}\nご請求予定金額:${billingamount}円\n基本料金:${basiccharge}円\n今回ご使用量:${quantity}㎥\nガス料金単価:${resultround}\n-----------\n【お安くなる金額目安】\n${costcutmsg}`;
         }
 
                 
