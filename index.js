@@ -64,7 +64,7 @@ $(function () {
                 
         //電話番号関連項目 
         
-        if( tel1 == 999 && tel2 == 999 && tel3 == 999 ){
+        if( tel1 === null && tel2 === null && tel3 === null ){
             var tel_date = '電話希望時のみ入力必須';
         }else{
             var tel_date = $('input[name="entry.182653158"]').val();
