@@ -1,6 +1,6 @@
 $(function(){
   
-  $('document').getElementById("ex_age_b").addEventListener("change", function(){
+  $(document).getElementById("ex_age_b").addEventListener("change", function(){
 
     document.getElementById("contact1").selectedIndex = 0;
     document.getElementById("contact2").selectedIndex = 0;
@@ -38,7 +38,7 @@ $(function(){
   }, false);
                     
 
-  $('document').getElementById("contact1").addEventListener("change", function(){
+  $(document).getElementById("contact1").addEventListener("change", function(){
   
     document.getElementById("ex_box_b").value='';
     document.getElementById("changetest1").value='';    
@@ -89,7 +89,7 @@ $(function(){
     }
   }, false);
                     
-  $('document').getElementById("contact2").addEventListener("change", function(){
+  $(document).getElementById("contact2").addEventListener("change", function(){
 
     document.getElementById("ex_box_b").value='';
     document.getElementById("changetest1").value='';
