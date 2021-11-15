@@ -56,7 +56,7 @@ $(function(){
     var s_value = age_elem.selectedIndex; 
     var contact1_type = document.getElementById("contact1");
     var c1_value = contact1_type.selectedIndex;                    
-    //直接連絡の場合（メール利用）
+    //直接連絡の場合（メール必須）
     if(s_value == 1 && c1_value == 1){
                             $("#ex_box_div_b").show("normal");
                             $("#ex_box_div_x").hide("normal");
@@ -69,7 +69,7 @@ $(function(){
                             document.getElementById("ex_box_b").removeAttribute("disabled");
                             document.getElementById("changetest3").setAttribute("disabled", true);
                             document.getElementById("changetest5").setAttribute("disabled", true);                
-      //直接連絡の場合（電話利用）
+      //直接連絡の場合（電話必須）
     }else if(s_value == 1 && c1_value == 2){
                             $("#ex_box_div_b").hide("normal");
                             $("#ex_box_div_x").show("normal");
@@ -113,6 +113,7 @@ $(function(){
     var s_value = age_elem.selectedIndex;
     var contact2_type = document.getElementById("contact2");
     var c2_value = contact2_type.selectedIndex;                                                
+    //順子の窓口経由の場合（メール必須）
     if(s_value == 2 && c2_value == 2){
                             $("#ex_box_div_b").show("normal");
                             $("#ex_box_div_x").hide("normal");
@@ -125,6 +126,7 @@ $(function(){
                             document.getElementById("ex_box_b").removeAttribute("disabled");
                             document.getElementById("changetest3").setAttribute("disabled", true);
                             document.getElementById("changetest5").setAttribute("disabled", true);
+    //順子の窓口経由の場合（電話必須）
     }else if(s_value == 2 && c2_value == 3){
                             $("#ex_box_div_b").hide("normal");
                             $("#ex_box_div_x").show("normal");
@@ -137,6 +139,7 @@ $(function(){
                             document.getElementById("ex_box_b").setAttribute("disabled", true);
                             document.getElementById("changetest3").removeAttribute("disabled");
                             document.getElementById("changetest5").setAttribute("disabled", true);
+    //順子の窓口経由の場合（LINE利用） 
     }else{
                             $("#ex_box_div_b").hide("normal");
                             $("#ex_box_div_x").hide("normal");
