@@ -63,8 +63,8 @@ $(function () {
         var email3 = $('input[id="changetest5"]').val();        
                 
         //電話番号関連項目 
-        
-        if( tel1 === null && tel2 === null && tel3 === null ){
+        var tel_date = $('input[name="entry.182653158"]').val();
+        if( tel_date === null ){
             var tel_date = '電話希望時のみ入力必須';
         }else{
             var tel_date = $('input[name="entry.182653158"]').val();
