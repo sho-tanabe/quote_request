@@ -20,59 +20,19 @@ $(function () {
 
     
     
-            
-
-    
-    ////選択肢に応じて動的に項目を表示非表示させるファンクションのテスト開始
-    
-    //$('form').document.getElementById("ex_age_b").addEventListener("change", function(){
-    //    var age_elem = document.getElementById("ex_age_b");
-    //    var s_value = age_elem.options[age_elem.selectedIndex].value;
-    //    if(s_value == "answer1"){$("#ex_box_div_b").hide("normal");}else{$("#ex_box_div_b").show("normal");}        
-    //}, false);
-    ////選択肢に応じて動的に項目を表示非表示させるファンクションのテスト開始
-    
-    
-    
-    
-    
-    
-    //ブラウザバリデーション　→ 原因不明だがトーク投稿に至らないため、失敗。いったんコメントアウト中。ここが悪いのではなくhtml側の問題かもしれない。。。調査中。
-
-//    $(function () {
-//        var forms = document.querySelectorAll('.needs-validation');
-//        Array.prototype.slice.call(forms).forEach(function (form) {    
-//            form.addEventListener('submit', function (event) {
-//                if (!form.checkValidity()) {
-//                    event.preventDefault();        
-//                    event.stopPropagation();
-//                }
-//                form.classList.add('was-validated');
-//            }, false);
-//        })
-//    })();
-    //ブラウザバリデーション　→ 原因不明だがトーク投稿に至らないため、失敗。いったんコメントアウト中。ここが悪いのではなくhtml側の問題かもしれない。。。調査中。    
-
-    
     // 送信
     $('form').submit(function () {
 
 
+        //進め方項目
         
         
-        //練習エリア開始
-//        var text1 = $('input[name="text1"]').val();
-//        var select1 = $('[name="select1"] option:selected').val();
-//        var text10 = $('input[name="text10"]').val();
-//        var date = $('input[name="date"]').val();
-//        var number = $('input[name="number"]:checked').val();
-       
-//        var names = '';
-//        $('#form-name').children().each(function (i, elm) {
-//            names += $(elm).val() + '、';
-//        })
-//        names = names.slice(0, -1);
-        //練習エリア終了
+        
+        
+        //基本情報項目
+        
+        
+        
         
         //住所項目
 
@@ -82,6 +42,17 @@ $(function () {
         var address2 = $('input[name="entry.1656297817"]').val();
         var address3 = $('input[name="entry.33302498"]').val();
                 
+        //ガス関連項目
+
+        
+        
+        
+        //アンケート関連項目
+        
+        
+        
+        
+        
         
         //計算要素項目
         var billingamount = $('input[name="entry.642272830"]').val();
