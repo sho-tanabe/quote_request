@@ -6,6 +6,7 @@ $(function(){
     document.getElementById("contact2").selectedIndex = 0;
     var age_elem = document.getElementById("process");
     var s_value = age_elem.selectedIndex;
+    //直接連絡の場合（メールまたは電話利用）
     if(s_value == 1){
                             $("#contact_grp1").show("normal");
                             $("#contact_grp2").hide("normal");
@@ -15,7 +16,8 @@ $(function(){
                             document.getElementById("contact1").setAttribute("required", true);
                             document.getElementById("contact2").removeAttribute("required");
                             document.getElementById("contact1").removeAttribute("disabled");
-                            document.getElementById("contact2").setAttribute("disabled", true);
+                            document.getElementById("contact2").setAttribute("disabled", true);      
+    //直接連絡の場合（LINEまたはメールまたは電話利用）
     }else if(s_value == 2){
                             $("#contact_grp1").hide("normal");
                             $("#contact_grp2").show("normal");
@@ -39,6 +41,7 @@ $(function(){
 });
                     
 
+//直接連絡の場合（メールまたは電話利用）
 $(function(){
 
   document.getElementById("contact1").addEventListener("change", function(){
@@ -53,6 +56,7 @@ $(function(){
     var s_value = age_elem.selectedIndex; 
     var contact1_type = document.getElementById("contact1");
     var c1_value = contact1_type.selectedIndex;                    
+    //直接連絡の場合（メール利用）
     if(s_value == 1 && c1_value == 1){
                             $("#ex_box_div_b").show("normal");
                             $("#ex_box_div_x").hide("normal");
@@ -65,6 +69,7 @@ $(function(){
                             document.getElementById("ex_box_b").removeAttribute("disabled");
                             document.getElementById("changetest3").setAttribute("disabled", true);
                             document.getElementById("changetest5").setAttribute("disabled", true);                
+      //直接連絡の場合（電話利用）
     }else if(s_value == 1 && c1_value == 2){
                             $("#ex_box_div_b").hide("normal");
                             $("#ex_box_div_x").show("normal");
