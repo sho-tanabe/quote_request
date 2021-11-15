@@ -52,16 +52,16 @@ $(function () {
         var username = $('input[name="entry.123644310"]').val();
         var contact = $('[name="entry.499682447"] option:selected').text();
         var tel = $('input[name="entry.1613264123"]').val();
-        var tel_date = $('input[name="entry.182653158"]').val();
+        //var tel_date = $('input[name="entry.182653158"]').val();
         var email = $('input[name="entry.1196358205"]').val();        
         
         
         //電話番号関連項目 
-        //if( tel = "" ){
-        //    var tel_date = '電話希望時のみ入力';
-        //}else{
-        //    var tel_date = $('input[name="entry.182653158"]').val();
-        //}
+        if( tel = "" ){
+            var tel_date = '電話希望時のみ入力';
+        }else{
+            var tel_date = $('input[name="entry.182653158"]').val();
+        }
         
         //住所項目
 
