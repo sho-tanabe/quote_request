@@ -51,8 +51,8 @@ $(function () {
         //基本情報項目
         var username = $('input[name="entry.123644310"]').val();
         var contact = $('[name="entry.499682447"] option:selected').text();
-        //var tel = $('input[name="entry.1613264123"]').val();
-        var tel_date = $('input[name="entry.182653158"]').val();
+        var tel = $('input[name="entry.1613264123"]').val();
+        //var tel_date = $('input[name="entry.182653158"]').val();
         var email = $('input[name="entry.1196358205"]').val();        
         
         
