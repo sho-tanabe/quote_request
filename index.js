@@ -51,10 +51,17 @@ $(function () {
         //基本情報項目
         var username = $('input[name="entry.123644310"]').val();
         var contact = $('[name="entry.499682447"] option:selected').text();
-        var tel = $('input[name="entry.1613264123"]').val();
+        //var tel = $('input[name="entry.1613264123"]').val();
         var tel_date = $('input[name="entry.182653158"]').val();
         var email = $('input[name="entry.1196358205"]').val();        
         
+        
+        //電話番号関連項目 
+        if( tel = "" ){
+            var tel_date = '電話希望時のみ入力';
+        }else{
+            var tel_date = $('input[name="entry.182653158"]').val();
+        }
         
         //住所項目
 
@@ -103,6 +110,9 @@ $(function () {
                 var costcutmsg = `約${costcutfloor}円程度`;
                 }
 
+
+        
+        
         //送信前の確認画面のメッセージ
         var confirm_msg = `【基本情報】\nお名前:${username}様\n今後の進め方:${process}\n希望の連絡方法:${contact}\n電話番号:${tel}\n(電話の希望日:${tel_date})\nメールアドレス:${email}\n【現在お住まいの地域】\n〒:${postnumber}\n都道府県:${address1}\n市区町村:${address2}\n町・番地:${address3}\n【現在のガスについて】\n利用中のガス提供会社:${gas_company}\n利用用途:${gas_area}\n居住形態:${gas_house}\nご請求予定金額:${billingamount}円\n基本料金:${basiccharge}円\n今回ご使用量:${quantity}㎥\nガス料金単価:${resultround}`;            
 
@@ -123,7 +133,7 @@ $(function () {
 
         
 
-        var submitresult = window.confirm('以下の内容で診断します\n--\n' + msg);/////////////////////////////////////////////診断ボタン押下後の条件分岐テスト用        
+        var submitresult = window.confirm('以下の内容で診断します\n--\n' + confirm_msg);/////////////////////////////////////////////診断ボタン押下後の条件分岐テスト用        
         if( submitresult ) {/////////////////////////////////////////////診断ボタン押下後の条件分岐テスト用
             console.log('OKがクリックされました');/////////////////////////////////////////////診断ボタン押下後の条件分岐テスト用
 
