@@ -36,7 +36,10 @@ $(function(){
                             document.getElementById("contact2").removeAttribute("required");
     }
   }, false);
+});
                     
+
+$(function(){
 
   document.getElementById("contact1").addEventListener("change", function(){
   
@@ -88,7 +91,11 @@ $(function(){
                             document.getElementById("changetest5").removeAttribute("disabled");
     }
   }, false);
-                    
+});
+
+
+
+$(function(){  
   document.getElementById("contact2").addEventListener("change", function(){
 
     document.getElementById("ex_box_b").value='';
