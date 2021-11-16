@@ -89,8 +89,8 @@ $(function () {
         
         //アンケート関連項目
         
-        
-        
+        var question1 = $('[id="question1"] option:selected').text();  
+        var question2 = $('[id="question2"] option:selected').text();  
         
         
         
@@ -124,14 +124,14 @@ $(function () {
         
         
         //送信前の確認画面のメッセージ
-        var confirm_msg = `【基本情報】\nお名前:${username}様\n今後の進め方:${process}\n希望の連絡方法:${contact}\n電話番号:${tel1}${tel2}${tel3}\n(電話の希望日:${tel_date})\nメールアドレス:${email1}${email2}${email3}\n【現在お住まいの地域】\n〒${postnumber}\n${address1}${address2}${address3}\n【現在のガスについて】\n利用中のガス提供会社:${gas_company}\n利用用途:${gas_area}\n居住形態:${gas_house}\nご請求予定金額:${billingamount}円\n基本料金:${basiccharge}円\n今回ご使用量:${quantity}㎥\nガス料金単価:${resultround}`;            
+        var confirm_msg = `【基本情報】\nお名前:${username}様\n今後の進め方:${process}\n希望の連絡方法:${contact}\n電話番号:${tel1}${tel2}${tel3}\n(電話の希望日:${tel_date})\nメールアドレス:${email1}${email2}${email3}\n【現在お住まいの地域】\n〒${postnumber}\n${address1}${address2}${address3}\n【現在のガスについて】\n利用中のガス提供会社:${gas_company}\n利用用途:${gas_area}\n居住形態:${gas_house}\nご請求予定金額:${billingamount}円\n基本料金:${basiccharge}円\n今回ご使用量:${quantity}㎥\nガス料金単価:${resultround}\nアンケート\n${question1}\n${question2}`;            
 
 
         //LINEトークに投稿するメッセージ
         if ( 7 >= address1num || address1num >= 15 ){
-            var msg = `【基本情報】\nお名前:${username}様\n今後の進め方:${process}\n希望の連絡方法:${contact}\n電話番号:${tel1}${tel2}${tel3}\n(電話の希望日:${tel_date})\nメールアドレス:${email1}${email2}${email3}\n【現在お住まいの地域】\n〒${postnumber}\n${address1}${address2}${address3}\n【現在のガスについて】\n利用中のガス提供会社:${gas_company}\n利用用途:${gas_area}\n居住形態:${gas_house}\nご請求予定金額:${billingamount}円\n基本料金:${basiccharge}円\n今回ご使用量:${quantity}㎥\nガス料金単価:${resultround}\n-----------\n【お安くなる金額目安】\n対象外地域のため判定できません。`;
+            var msg = `【基本情報】\nお名前:${username}様\n今後の進め方:${process}\n希望の連絡方法:${contact}\n電話番号:${tel1}${tel2}${tel3}\n(電話の希望日:${tel_date})\nメールアドレス:${email1}${email2}${email3}\n【現在お住まいの地域】\n〒${postnumber}\n${address1}${address2}${address3}\n【現在のガスについて】\n利用中のガス提供会社:${gas_company}\n利用用途:${gas_area}\n居住形態:${gas_house}\nご請求予定金額:${billingamount}円\n基本料金:${basiccharge}円\n今回ご使用量:${quantity}㎥\nガス料金単価:${resultround}\nアンケート\n${question1}\n${question2}\n-----------\n【お安くなる金額目安】\n対象外地域のため判定できません。`;
         } else {
-            var msg = `【基本情報】\nお名前:${username}様\n今後の進め方:${process}\n希望の連絡方法:${contact}\n電話番号:${tel1}${tel2}${tel3}\n(電話の希望日:${tel_date})\nメールアドレス:${email1}${email2}${email3}\n【現在お住まいの地域】\n〒${postnumber}\n${address1}${address2}${address3}\n【現在のガスについて】\n利用中のガス提供会社:${gas_company}\n利用用途:${gas_area}\n居住形態:${gas_house}\nご請求予定金額:${billingamount}円\n基本料金:${basiccharge}円\n今回ご使用量:${quantity}㎥\nガス料金単価:${resultround}\n-----------\n【お安くなる金額目安】\n${costcutmsg}`;
+            var msg = `【基本情報】\nお名前:${username}様\n今後の進め方:${process}\n希望の連絡方法:${contact}\n電話番号:${tel1}${tel2}${tel3}\n(電話の希望日:${tel_date})\nメールアドレス:${email1}${email2}${email3}\n【現在お住まいの地域】\n〒${postnumber}\n${address1}${address2}${address3}\n【現在のガスについて】\n利用中のガス提供会社:${gas_company}\n利用用途:${gas_area}\n居住形態:${gas_house}\nご請求予定金額:${billingamount}円\n基本料金:${basiccharge}円\n今回ご使用量:${quantity}㎥\nガス料金単価:${resultround}\nアンケート\n${question1}\n${question2}\n-----------\n【お安くなる金額目安】\n${costcutmsg}`;
         }
 
                 
