@@ -111,7 +111,7 @@ $(function () {
 
         //コスト削減予定額（LINEトーク送信用）
         if (costcut < 1000){
-            var costcutmsg = `判定結果をご確認ください(${costcut})`;
+            var costcutmsg = `料金診断結果をご参照ください(${costcut})`;
         }　else if (costcut < 10000){
             var costcutfloor = Math.floor(costcut / 100) * 100;
             var costcutmsg = `約${costcutfloor}円程度`;
