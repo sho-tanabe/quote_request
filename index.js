@@ -67,6 +67,7 @@ $(function () {
             var tel = '';
         }
         window.alert(tel);
+        console.log(tel);
 
         var tel_date = $('input[name="entry.182653158"]').val();
         var tel_date_num = Number(tel_date)
@@ -76,6 +77,7 @@ $(function () {
             var tel_date = $('input[name="entry.182653158"]').val();
         }
         
+        console.log(tel_date);
         
         //住所項目
 
