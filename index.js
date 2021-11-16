@@ -64,8 +64,9 @@ $(function () {
                 
         //電話番号関連項目 
         var tel_date = $('input[name="entry.182653158"]').val();
-        window.alert(tel_date);
-        if( tel_date === null ){
+        var tel_date_num = Number(tel_date)
+        window.alert(tel_date_num);
+        if( tel_date_num === 0 ){
             var tel_date = '電話希望時のみ入力必須';
         }else{
             var tel_date = $('input[name="entry.182653158"]').val();
