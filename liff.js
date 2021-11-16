@@ -59,13 +59,13 @@ function sendMessages(text) {
     }]).then(function () {
         document.googleform1.submit();
     }).then(function () {
-        window.alert('診断結果はLINEチャット画面に表示されます。');
+        window.alert('申し込み内容はLINEチャット画面に表示されます。');
 //GoogleFormを利用しない場合に限り、then文とliff.closewindowをここに挟み込むことで画面クローズを動作させることができる。
     //}).then(function () {    
         //liff.closeWindow();
 //GoogleFormを利用しない場合に限り、liff.closewindowをここに挟み込むことで画面クローズを動作させることができる。        
     }).catch(function (error) {
-        window.alert('999Failed to send message ' + error);
+        window.alert('Failed to send message ' + error);
     });
 }
 //2通同時に送れるかテスト
