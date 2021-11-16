@@ -63,11 +63,13 @@ $(function () {
         var tel3 = $('input[id="changetest4"]').val();
         if (tel1 === null && tel2 === null && tel3 === null){
             var tel = '入力なし';
+        }else{
+            var tel = '';
         }
+        window.alert(tel);
 
         var tel_date = $('input[name="entry.182653158"]').val();
         var tel_date_num = Number(tel_date)
-        window.alert(tel_date_num);
         if( tel_date_num === 0 ){
             var tel_date = '入力なし';
         }else{
