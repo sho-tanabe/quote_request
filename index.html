@@ -74,8 +74,8 @@
                 <div class="form-floating">
                     <input class="form-control form-control-lg mx-auto" id="username" name="entry.123644310" type="text"  placeholder="aaaaa" required>
                     <label for="username">
-                        <font size="-1" color="#202020">お名前</font>
-                        <font size="-2" color="violet">必須</font>
+                        <font size="-1" color="dimgray">入力して下さい</font>
+<!--                        <font size="-2" color="violet">必須</font>  -->
                     </label>                    
                     <div class="valid-feedback">Good!</div>
                     <div class="invalid-feedback">Required.</div>
@@ -92,13 +92,14 @@
                             <option value="電話">電話</option>
                         </select>                
                         <label for="contact1">                    
-                            <font size="-1" color="#202020">ご希望の連絡方法</font>
-                            <font size="-2" color="violet">必須</font>                
+                            <font size="-1" color="dimgray">選択して下さい</font>
+<!--                            <font size="-2" color="violet">必須</font>                -->
                         </label>
                     </div>    
                 </div>
 <!---------------------------------------------------------------------------------------------------------------->        
                 <div id="contact_grp2" style="display:none;">                   
+                    <p class="w-100">ご希望の連絡方法 <span class="badge bg-danger">必須</span></p>
                     <div class="form-floating mx-auto">                           
                         <select id="contact2" name="entry.499682447" class="form-select mx-auto">                               
                             <option selected></option>                                    
@@ -107,8 +108,8 @@
                             <option value="電話">電話</option>
                         </select>                
                         <label for="contact2">                    
-                            <font size="-1" color="#202020">ご希望の連絡方法</font>
-                            <font size="-2" color="violet">必須</font>                
+                            <font size="-1" color="dimgray">選択して下さい</font>
+<!--                            <font size="-2" color="violet">必須</font>                -->
                         </label>
                     </div>
                 </div> 
@@ -123,21 +124,23 @@
                 </div>             
 <!---------------------------------------------------------------------------------------------------------------->
                 <div id="ex_box_div_b" style="display:none;">                                      
+                    <p class="w-100">メールアドレス <span class="badge bg-danger">必須</span></p>
                     <div class="form-floating">
                         <input class="form-control form-control-lg mx-auto" id="ex_box_b" name="entry.1196358205" type="email"  placeholder="aaaaa">
                         <label for="ex_box_b">
-                            <font size="-1" color="#202020">メール</font>                        
-                            <font size="-2" color="violet">必須</font>
+                            <font size="-1" color="dimgray">入力して下さい</font>                        
+<!--                            <font size="-2" color="violet">必須</font>  -->
                         </label>
                         <div class="valid-feedback">Good!</div>
                         <div class="invalid-feedback">Required.</div>
                     </div>  
                     <br>
+                    <p class="w-100">電話番号 <span class="badge bg-secondary">任意</span></p>
                     <div class="form-floating">                    
                         <input class="form-control form-control-lg mx-auto" id="changetest1" name="entry.1613264123" type="tel"  placeholder="999" />                    
                         <label for="changetest1">                        
-                            <font size="-1" color="#202020">電話番号</font>                        
-                            <font size="-2" color="dimgray">任意入力</font>
+                            <font size="-1" color="dimgray">入力して下さい</font>                        
+ <!--                           <font size="-2" color="dimgray">任意入力</font>  -->
                         </label>                        
                         <div class="valid-feedback">Good!</div>                    
                         <div class="invalid-feedback">Required.</div>                
@@ -145,22 +148,24 @@
                 </div>
 <!---------------------------------------------------------------------------------------------------------------->              
                 <div id="ex_box_div_x" style="display:none;">                
+                    <p class="w-100">電話番号 <span class="badge bg-danger">必須</span></p>
                     <div class="form-floating">                    
                         <input class="form-control form-control-lg mx-auto" id="changetest2" name="entry.1613264123" type="tel"  placeholder="999">
                         <label for="changetest2">                        
-                            <font size="-1" color="#202020">電話番号</font>
-                            <font size="-2" color="violet">必須</font>
+                            <font size="-1" color="dimgray">入力して下さい</font>
+<!--                            <font size="-2" color="violet">必須</font>  -->
                         </label>
                         <div class="valid-feedback">Good!</div>
                         <div class="invalid-feedback">Required.</div>
                     </div>
 <!------日付テスト開始---------------------------------------------------------------------------------------------------------->                                  
                     <br>
+                    <p class="w-100">お電話連絡の希望日 <span class="badge bg-danger">必須</span></p>
                     <div class="form-floating">                    
                         <input class="form-control form-control-lg mx-auto" id="date" name="entry.182653158" type="date" placeholder="xx">
                         <label for="date">                        
-                            <font size="-1" color="#202020">お電話連絡の希望日</font>
-                            <font size="-2" color="violet">必須</font>
+                            <font size="-1" color="dimgray">カレンダーから選択して下さい</font>
+<!--                            <font size="-2" color="violet">必須</font>  -->
                         </label>
                         <div class="valid-feedback">Good!</div>
                         <div class="invalid-feedback">Required.</div>
@@ -169,11 +174,12 @@
 <!------日付テスト終了---------------------------------------------------------------------------------------------------------->                                  
                                         
                     <br>
+                    <p class="w-100">メールアドレス <span class="badge bg-secondary">任意</span></p>
                     <div class="form-floating">
                         <input class="form-control form-control-lg mx-auto" id="changetest3" name="entry.1196358205" type="email"  placeholder="aaaaa" />
                         <label for="changetest3">
-                            <font size="-1" color="#202020">メールアドレス</font>
-                            <font size="-2" color="dimgray">任意入力</font>
+                            <font size="-1" color="dimgray">入力して下さい</font>
+<!--                            <font size="-2" color="dimgray">任意入力</font>  -->
                         </label>
                         <div class="valid-feedback">Good!</div>
                         <div class="invalid-feedback">Required.</div>
@@ -181,21 +187,23 @@
                 </div>            
 <!---------------------------------------------------------------------------------------------------------------->                
                 <div id="ex_box_div_y" style="display:none;">
+                    <p class="w-100">電話番号 <span class="badge bg-secondary">任意</span></p>
                     <div class="form-floating">
                         <input class="form-control form-control-lg mx-auto" id="changetest4" name="entry.1613264123" type="tel"  placeholder="999" />
                         <label for="changetest4">
-                            <font size="-1" color="#202020">電話番号</font>
-                            <font size="-2" color="dimgray">任意入力</font>
+                            <font size="-1" color="dimgray">入力して下さい</font>
+<!--                            <font size="-2" color="dimgray">任意入力</font>  -->
                         </label>
                         <div class="valid-feedback">Good!</div>
                         <div class="invalid-feedback">Required.</div>
                     </div>  
                     <br>
+                    <p class="w-100">メールアドレス <span class="badge bg-secondary">任意</span></p>
                     <div class="form-floating">
                         <input class="form-control form-control-lg mx-auto" id="changetest5" name="entry.1196358205" type="email"  placeholder="aaaaa" />
                         <label for="changetest5">
-                            <font size="-1" color="#202020">メールアドレス</font>
-                            <font size="-2" color="dimgray">任意入力</font>
+                            <font size="-1" color="dimgray">入力して下さい</font>
+<!--                            <font size="-2" color="dimgray">任意入力</font>  -->
                         </label>                    
                         <div class="valid-feedback">Good!</div>
                         <div class="invalid-feedback">Required.</div>
