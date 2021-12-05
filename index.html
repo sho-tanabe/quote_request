@@ -337,12 +337,13 @@
                     </font>
                 </div>
 <!---------------------------------------------------------------------------------------------------------------->        
-                <p class="w-100 mx-3"><font size="+1">現在ご利用中のガスについて</font></p>
-<!---------------------------------------------------------------------------------------------------------------->                
+                <p class="w-100"><font size="+1">現在ご利用中のガスについて</font></p>
+<!---------------------------------------------------------------------------------------------------------------->                                
+                <p class="w-100">プロパンガス提供会社の名称 <span class="badge bg-danger">必須</span></p>
                 <div class="form-floating">                
                     <input class="form-control form-control-lg" id="gas_company" name="entry.1867640231" type="text" placeholder="xxxxx" required>
                     <label for="gas_company">
-                        <font size="-1" color="#202020">プロパンガス提供会社の名称</font>
+                        <font size="-1" color="dimgray">入力して下さい</font>
                     </label>
                     <div class="valid-feedback">Good!</div>
                     <div class="invalid-feedback">Required.</div>
@@ -350,6 +351,7 @@
 <!---------------------------------------------------------------------------------------------------------------->                
                 <br>
 <!---------------------------------------------------------------------------------------------------------------->                
+                <p class="w-100">プロパンガスを利用している場所 <span class="badge bg-danger">必須</span></p>
                 <div class="form-floating mx-auto">                           
                     <select id="area" class="form-select mx-auto" name="entry.736823717" required>                               
                         <option selected></option>                                    
@@ -359,12 +361,13 @@
                         <option value="その他">その他</option> 
                     </select>                
                     <label for="area">                    
-                        <font size="-1" color="#202020">プロパンガスを利用している場所</font>                
+                        <font size="-1" color="dimgray">選択して下さい</font>                
                     </label>
                 </div>
 <!---------------------------------------------------------------------------------------------------------------->                                
                 <br>
 <!---------------------------------------------------------------------------------------------------------------->                
+                <p class="w-100">現在お住まいの住居種類 <span class="badge bg-danger">必須</span></p>
                 <div class="form-floating mx-auto">                           
                     <select id="house" class="form-select mx-auto" name="entry.2013057432" required>                               
                         <option selected></option>                                    
@@ -374,17 +377,17 @@
                         <option value="その他">その他</option>                        
                     </select>                
                     <label for="house">                    
-                        <font size="-1" color="#202020">現在お住まいの住居種類</font>                
+                        <font size="-1" color="dimgray">選択して下さい</font>                
                     </label>
                 </div>
 <!---------------------------------------------------------------------------------------------------------------->                                
                 <br>
 <!---------------------------------------------------------------------------------------------------------------->                
+                <p class="w-100">ご請求予定金額(円) <span class="badge bg-danger">必須</span></p>
                 <div class="form-floating">
                     <input class="form-control form-control-lg" id="billingamount" name="entry.642272830" type="number" maxlength="10" placeholder="00000円" required>
                     <label for="billingamount">
-                        <font size="-1" color="#202020">ご請求予定金額(円)</font>                    
-                        <font size="-2" color="violet">必須</font>
+                        <font size="-1" color="dimgray">入力して下さい</font>                    
                     </label>
                     <div class="valid-feedback">Good!</div>
                     <div class="invalid-feedback">Required.</div>
@@ -392,11 +395,11 @@
 <!---------------------------------------------------------------------------------------------------------------->                
                 <br>
 <!---------------------------------------------------------------------------------------------------------------->                
+                <p class="w-100">基本料金(円) <span class="badge bg-danger">必須</span></p>
                 <div class="form-floating">
                     <input class="form-control form-control-lg" id="basiccharge" name="entry.299805872" type="number" maxlength="10" placeholder="00000円">
                     <label for="basiccharge">                        
-                        <font size="-1" color="#202020">基本料金(円)</font>                        
-                        <font size="-2" color="dimgray">*ご不明の際は一般価格1650円と入力</font>
+                        <font size="-1" color="dimgray">ご不明の際は一般価格1650円と入力して下さい</font>
                     </label>
                     <div class="valid-feedback">Good!</div>
                     <div class="invalid-feedback">Required.</div>
@@ -404,11 +407,11 @@
 <!---------------------------------------------------------------------------------------------------------------->                
                 <br>
 <!---------------------------------------------------------------------------------------------------------------->                
+                <p class="w-100">今回ご使用量(㎥) <span class="badge bg-danger">必須</span></p>
                 <div class="form-floating">
                     <input class="form-control form-control-lg" id="quantity" name="entry.1113780615" type="number" maxlength="10" placeholder="00000円" required>
                     <label for="quantity">
-                        <font size="-1" color="#202020">今回ご使用量(㎥)</font>
-                        <font size="-2" color="violet">必須</font>
+                        <font size="-1" color="dimgray">入力して下さい</font>
                     </label>
                     <div class="valid-feedback">Good!</div>
                     <div class="invalid-feedback">Required.</div>
@@ -416,7 +419,7 @@
 <!---------------------------------------------------------------------------------------------------------------->
                 <br>                
 <!---------------------------------------------------------------------------------------------------------------->
-                <p class="w-100 mx-3">ガス料金単価(円)</p>
+                <p class="w-100">ガス料金単価(円)</p>
                 <p class="w-75 mx-auto" id="unitprice" name="entry.1056785657" type="number" value="0"></p>
 <!---------------------------------------------------------------------------------------------------------------->                
                 <br>
@@ -425,6 +428,7 @@
                     <font size="+1">最後にアンケートにご協力ください。</font>
                 </p>                
 <!---------------------------------------------------------------------------------------------------------------->                
+                <p class="w-100">順子の窓口をお知りになったきっかけを教えて下さい。 <span class="badge bg-secondary">任意</span></p>
                 <div class="form-floating mx-auto">                           
                     <select id="question1" class="form-select mx-auto" name="entry.1403671886">                               
                         <option selected></option>                                    
@@ -433,12 +437,13 @@
                         <option value="インターネット検索">インターネット検索</option>                        
                     </select>                
                     <label for="question1">                    
-                        <font size="-1" color="#202020">順子の窓口をお知りになったきっかけを教えて下さい。</font>                
+                        <font size="-1" color="#202020">選択して下さい</font>                
                     </label>
                 </div>
 <!---------------------------------------------------------------------------------------------------------------->                                
                 <br>
 <!---------------------------------------------------------------------------------------------------------------->
+                <p class="w-100">質問その２。 <span class="badge bg-secondary">任意</span></p>
                 <div class="form-floating mx-auto">                           
                     <select id="question2" class="form-select mx-auto" name="entry.1534745333">                               
                         <option selected></option>                                    
@@ -447,7 +452,7 @@
                         <option value="回答3">回答３</option>                        
                     </select>                
                     <label for="question2">                    
-                        <font size="-1" color="#202020">アンケート2問目</font>                
+                        <font size="-1" color="dimgray">選択して下さい</font>                
                     </label>
                 </div>
 <!---------------------------------------------------------------------------------------------------------------->                                
