@@ -232,11 +232,11 @@
 <!---------------------------------------------------------------------------------------------------------------->
                     <span class="form-control p-country-name mx-3 w-25 mt-3" style="display:none;">Japan</span>                
 <!---------------------------------------------------------------------------------------------------------------->
+                    <p class="w-100">郵便番号 <span class="badge bg-danger">必須</span></p>
                     <div class="form-floating">
                         <input class="form-control p-postal-code w-100 mx-auto" id="postnumber" name="entry.1592950719" type="number" maxlength="7" placeholder="0000000">
                         <label for="postnumber">
-                        <font size="-1" color="#202020">郵便番号</font>
-                        <font size="-2" color="dimgray">ハイフンなしの数字7桁</font>
+                        <font size="-1" color="dimgray">ハイフンなしの数字7桁</font>
                         </label>
                         <div class="valid-feedback">Good!</div>
                         <div class="invalid-feedback">Required.</div>                
@@ -244,6 +244,7 @@
 <!---------------------------------------------------------------------------------------------------------------->                                
                     <br>
 <!---------------------------------------------------------------------------------------------------------------->                
+                    <p class="w-100">都道府県 <span class="badge bg-danger">必須</span></p>
                     <div class="form-floating">
                         <select id="address1" name="entry.1674993749" class="form-select p-region-id w-100 mx-auto" required>                       
                         <option selected></option>                
@@ -296,8 +297,7 @@
                         <option value="47">沖縄県</option>    
                         </select>
                         <label for="address1">
-                        <font size="-1" color="#202020">都道府県</font>
-                        <font size="-2" color="violet">必須。手動選択可。</font>
+                        <font size="-1" color="dimgray">自動入力されます（手動入力も可）</font>
                         </label>
                         <div class="valid-feedback">Good!</div>
                         <div class="invalid-feedback">Required.</div>
@@ -305,11 +305,11 @@
 <!---------------------------------------------------------------------------------------------------------------->
                     <br>
 <!---------------------------------------------------------------------------------------------------------------->
+                    <p class="w-100">市区町村 <span class="badge bg-danger">必須</span></p>
                     <div class="form-floating">
                         <input class="form-control p-locality w-100 mx-auto" id="address2" name="entry.1656297817" type="text" placeholder="xxx" required>                  
                         <label for="address2">                       
-                        <font size="-1" color="#202020">市区町村</font>                     
-                        <font size="-2" color="violet">必須。手動入力可。</font>
+                        <font size="-1" color="dimgray">自動入力されます（手動入力も可）</font>                     
                         </label>
                         <div class="valid-feedback">Good!</div>
                         <div class="invalid-feedback">Required.</div>
@@ -317,11 +317,12 @@
 <!---------------------------------------------------------------------------------------------------------------->
                     <br>
 <!---------------------------------------------------------------------------------------------------------------->
+                    <p class="w-100">町・番地 <span class="badge bg-secondary">必須</span></p>
                     <div class="form-floating">
                     <input class="form-control p-street-address p-extended-address  w-100 mx-auto" id="address3" name="entry.33302498" type="text" placeholder="xxx">
                     <label for="address3">
-                        <font size="-1" color="#202020">町・番地</font>
-                        <font size="-2" color="violet">Aプランのみ必須。手動入力可。</font>
+                        <font size="-1" color="dimgray">自動入力されます（手動入力も可）</font>
+                        <font size="-2" color="violet">Aプランの場合は住所の最後までご入力下さい。</font>
                     </label>
                     <div class="valid-feedback">Good!</div>
                     <div class="invalid-feedback">Required.</div>
