@@ -139,8 +139,8 @@ function sendMessages2(text) {
     liff.sendMessages([{
         'type': 'text',
         'text': text
-    }]).then(function () {
-        liff.closeWindow();
+//    }]).then(function () {   //再びおかしくなったので（２連続で投稿するとフリーズする）
+//        liff.closeWindow();　　　　//再びおかしくなったので（２連続で投稿するとフリーズする）
     }).catch(function (error) {
         window.alert('Failed to send message ' + error);
     });
