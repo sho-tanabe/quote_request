@@ -141,7 +141,7 @@ function sendMessages2(text) {
         'text': text
     }]).then(function () {   //再びおかしくなったので（２連続で投稿するとフリーズする）
 //        liff.closeWindow();　　　　//再びおかしくなったので（２連続で投稿するとフリーズする）
-        window.alert('サンクス画面へ遷移');
+//        window.alert('サンクス画面へ遷移'); //メッセージ表示をさせない。{}に囲まれた中にアクションがなくても動作するか？
     }).catch(function (error) {
         window.alert('Failed to send message ' + error);
     });
